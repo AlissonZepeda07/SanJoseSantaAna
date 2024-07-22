@@ -1,0 +1,39 @@
+header {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    max-width: 100px;
+}
+
+h1 {
+    color: #FFA500; /* Orange color */
+}
+
+.highlight {
+    border: 2px solid #DFFF00; /* Light greenish-yellow color */
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+p.bg-light {
+    border-radius: 5px;
+}
+
+button.btn-light {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vistaoferDes {
+    background: url(../img/fondodedescripofer.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20%;
+    align-items: center;
+}
