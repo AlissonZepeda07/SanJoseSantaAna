@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: "Courgette", cursive;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+
+main {
+    margin: 0px 10px 10px 10px;
+    position: absolute;
+    min-height: 100vh;
+    position: sticky;
+    padding-bottom: 50px;
+}
+
+.container {
+    padding-bottom: 50px;
+}
+
+
+/* Navbar */
+.navbar-expand-lg {
+    background-color: #11a116 !important;
+    color: #fefefe !important;
+}
+
+.nav-link.active {
+    color: #f3fefe !important;
+    font-size: 30px !important;
+}
+
+.nav-link.active:active {
+    background-color: rgba(214, 214, 214, 0.226) !important;
+    border-radius: 50px;
+}
+
+.dropdown-toggle{
+    color: #f3fefe !important;
+    font-size: 30px !important;
+}
+
+.dropdown-toggle:active{
+    background-color: rgba(214, 214, 214, 0.226) !important;
+    border-radius: 50px;
+}
+
+.dropdown-item:active{
+    background-color: #11a116;
+}
+
+
+
+.iconoder {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+
+.boton {
+    background-color: #fefefe;
+}
+
+.navbar-brand {
+    color: #f3fefe !important;
+    font-size: 30px !important;
+}
+
+span {
+    color: #f3fefe;
+}
+
+/*Fin Navbar */
+
+
+
+/* Perfil */
+.TituPerfi {
+    color: #11a116;
+}
+
+.imagPer {
+    margin-left: 70px;
+}
+
+.cuadroText {
+    margin-left: 10px;
+    color: #11a116;
+}
+
+.letraPer {
+    color: #11a116;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.botoncitoMas {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+select {
+    border-color: #11a116 !important;
+}
+
+.BotonActualizar{
+    margin-top: 50px;
+}
+
+.BotonActualizar:hover {
+    filter: invert(40);
+}
+
+
+/* fin de Perfil */
+
+.Fondo {
+    background: url(../img/fondo_inicio.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70%;
+    align-items: center;
+}
+
+input {
+    border-color: rgb(43, 226, 110) !important;
+}
+
+.test {
+    border-radius: 100px 100px 0 0;
+}
+
+.oscuro {
+    background-color: #11a116 !important;
+}
+
+section button {
+    background-color: #11a116 !important;
+    color: #fefefe !important;
+}
+
+/*zona usuarios*/
+
+.botoncitoPerfilAgre {
+    margin-top: 20px;
+}
+
+
+.btnUsuAgregar {
+    position: absolute;
+    right: 20px;
+    background-color: #11a116;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 35px;
+}
+.btnReportes{
+    background-color: #11a116;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+.log{
+    background-color: #11a116;
+    border-radius: 800rem;
+    color: #f3fefe;
+    cursor: pointer;
+}
+
+.container-usuarios {
+    padding: 2rem 3%;
+}
+
+.container-usuarios button {
+    border-radius: 20px;
+    background-color: #11a116;
+    color: white;
+    padding: 15px 15px;
+    margin: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.usuusu {
+    text-align: left;
+    padding: 1rem 3%;
+    color: #19ab34;
+}
+
+.text_menu {
+    text-align: center;
+    color: white !important;
+    font: 150% sans-serif;
+}
+
+/*footer*/
+
+footer {
+    color: aliceblue;
+    width: 100%;
+    bottom: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1px;
+    background-color: #11a116 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.social-icons-container,
+.footer-menu-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+
+.social-icons {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #fefefe;
+    background-image: url(../img/imagen_f.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icons:hover {
+    background-color: #000000;
+    filter: invert(40)
+}
+
+.social-icons:nth-last-of-type(2) {
+    background-image: url(../img/imagen_t.png);
+}
+
+.social-icons:nth-last-of-type(3) {
+    background-image: url(../img/imagen_i.png);
+}
+
+
+.footer-menu-conteiner {
+    list-style-type: none;
+    color: #fefefe;
+    font-size: 18px;
+}
+
+.copyright {
+    color: #fefefe;
+    opacity: 0.3;
+    text-align: center;
+}
+
+/*zona productos (admin)*/
+
+.btn_producto_agregar {
+    position: absolute;
+    right: 20px;
+    background-color: #11a116;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 35px;
+}
+
+.imagen-producto {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #fefefe;
+    background-image: url(../img/imagen_f.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+
+}
+
+.botones_productos:hover {
+    filter: invert(40);
+}
+
+/*zona pedidos*/
+.imagen-pedido:hover {
+    filter: invert(40)
+}
+
+
+.cuadroTextPedi {
+    margin-left: 70px;
+}
+
+.btnPed{
+    margin-left: 50px;
+}
+
+.estadousu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(81, 255, 0);
+    /* Estado inactivo */
+}
+
+.estadousu:active {
+    background-color: red;
+    /* Estado activo al hacer clic */
+}
+
+.estadousu.online {
+    border: 2px solid rgb(41, 255, 98);
+    /* Estilo para el estado en línea */
+}
+
+/* Modal */
+.modal {
+    z-index: 1050; /* Asegura que el modal esté por encima del resto del contenido */
+    overflow-y: auto; /* Permite desplazarse verticalmente dentro del modal si es necesario */
+}
+
+.modal-dialog {
+    max-width: 90%; /* Ajusta el ancho máximo del modal según sea necesario */
+    margin: 1rem auto; /* Centra el modal verticalmente */
+}
+
+.modal-content {
+    border-radius: 20px; /* Ajusta el radio de borde del modal */
+}
+
+.modal-header {
+    background-color: #11a116;
+    color: white;
+    border-bottom: none; /* Elimina el borde inferior del encabezado */
+}
+
+.modal-body {
+    background-color: #fefefe; /* Color de fondo del cuerpo del modal */
+}
+
+.modal-footer {
+    background-color: #fefefe; /* Color de fondo del pie del modal */
+    border-top: none; /* Elimina el borde superior del pie del modal */
+}
+
+.modal-backdrop {
+    z-index: 1040; /* Asegura que el fondo oscuro esté por debajo del modal */
+}
+
+
+/*Zona del empleado*/
+
+.tamanioImagenTablaEmpleado{
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.671);
+}
+
+.fondo-botones-crud{
+    background-color: #1D1C6A;
+}

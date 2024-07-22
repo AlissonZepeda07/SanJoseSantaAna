@@ -1,0 +1,166 @@
+.containerMarca {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.imagenMarcaS {
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    background-color: transparent;
+    /* Agrega un fondo para visualizar mejor */
+    overflow: hidden;
+    /* Asegura que el contenido no se desborde */
+    box-shadow: 8px 17px 8px -3px rgba(87, 87, 87, 0.69);
+    -webkit-box-shadow: 8px 17px 8px -3px rgba(87, 87, 87, 0.69);
+    -moz-box-shadow: 8px 17px 8px -3px rgba(87, 87, 87, 0.69);
+}
+
+.imagenMarcaS img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que la imagen cubra completamente el contenedor sin deformarse */
+}
+
+
+/* Contenedor para mostrar detalles de la marca seleccionada  */
+
+.contenedorPadreMarca {
+    background: linear-gradient(146deg, #16ba58, #137f1a, #21ac46, #199d19);
+    background-size: 240% 240%;
+    animation: gradient-animation 8s ease infinite;
+    border-radius: 18px;
+    width: 80%;
+    box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
+    -webkit-box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
+    -moz-box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
+}
+
+
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.textMarcaP {
+    margin-top: 14px;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+}
+
+.textMarcaM {
+    margin-top: 14px;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.espaciadoMarca {
+    margin-top: 140px;
+}
+
+.tamaño_imagen_marca {
+    margin-top: 20px;
+    width: 200px;
+}
+
+
+
+
+/*estilo para las cards*/
+.card {
+    margin: 0.5rem;
+    width: 270px;
+    height: 500px;
+    border-radius: 20px;
+    background: white;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid rgb(18, 159, 49);
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+/*quitar cursor, transition y card active*/
+
+
+.card-details {
+    color: black;
+    gap: .1rem;
+    display: grid;
+    place-content: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: black;
+    background-color: rgb(18, 159, 49);
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+}
+
+.text-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card:hover {
+    border-color: rgb(17, 156, 26);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.imagenMar {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
+    -webkit-box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
+    -moz-box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
+}
+
+/* Ajustes para el contenedor de las tarjetas */
+#productosMarc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* Espacio entre las tarjetas */
+    justify-content: center;
+    /* Centrar las tarjetas horizontalmente */
+}

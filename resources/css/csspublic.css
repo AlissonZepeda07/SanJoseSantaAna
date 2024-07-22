@@ -1,0 +1,880 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Courgette", cursive;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.producto_index {
+    height: 30px;
+}
+
+main {
+    margin: 0px 10px 10px 10px;
+    position: absolute;
+    min-height: 100vh;
+    position: sticky;
+    padding-bottom: 50px;
+}
+
+.container {
+    padding-bottom: 50px;
+}
+
+/*-----------------------------------
+                 NAVBAR
+  -----------------------------------
+*/
+
+.navbar-expand-lg {
+    background-color: #1F1B47 !important;
+    color: #fefefe !important;
+}
+
+.nav-link.active {
+    color: #f3fefe !important;
+    font-size: 30px !important;
+}
+
+.nav-link.active:active {
+    background-color: rgba(214, 214, 214, 0.226) !important;
+    border-radius: 50px;
+}
+
+.dropdown-toggle {
+    color: #f3fefe !important;
+    font-size: 30px !important;
+}
+
+.dropdown-toggle:active {
+    background-color: rgba(214, 214, 214, 0.226) !important;
+    border-radius: 50px;
+}
+
+.dropdown-item:active {
+    background-color: rgb(11, 165, 29);
+}
+
+.corazon {
+    background-color: #1F1B47 !important;
+}
+
+.corazon:active {
+    background-color: rgba(214, 214, 214, 0.226) !important;
+}
+
+.iconoder {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.marcos {
+    margin-left: 10px;
+}
+
+.boton {
+    background-color: #878c94d3;
+    margin-left: 10px;
+}
+
+.navbar-brand {
+    color: #f3fefe !important;
+    font-size: 30px !important;
+}
+
+span {
+    color: #f3fefe;
+}
+
+.profile-icon{
+    width: 60px;
+}
+
+/*Fin Navbar */
+
+
+
+.Fondo {
+    background: url(../img/fondo_inicio.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70%;
+    align-items: center;
+}
+
+input {
+    border-color: rgb(14, 156, 18) !important;
+}
+
+.test {
+    border-radius: 100px 100px 0 0;
+}
+
+.oscuro {
+    background-color: #1F1B47 !important;
+}
+
+section button {
+    background-color: #1D1C6A !important;
+    color: #fefefe !important;
+}
+
+
+
+.navbar-brand {
+    color: #f3fefe !important;
+    font-size: 30px !important;
+}
+
+
+/*footer*/
+
+footer {
+    color: aliceblue;
+    width: 100%;
+    bottom: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1px;
+    background-color: #1F1B47 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.social-icons-container,
+.footer-menu-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+
+.social-icons {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #fefefe;
+    background-image: url(../img/imagen_f.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icons:hover {
+    background-color: #000000;
+    filter: invert(40)
+}
+
+.social-icons:nth-last-of-type(2) {
+    background-image: url(../img/imagen_t.png);
+}
+
+.social-icons:nth-last-of-type(3) {
+    background-image: url(../img/imagen_i.png);
+}
+
+
+.footer-menu-conteiner {
+    list-style-type: none;
+    color: #fefefe;
+    font-size: 18px;
+}
+
+.copyright {
+    color: #fefefe;
+    opacity: 0.3;
+    text-align: center;
+}
+
+/*-----------------------------------
+        Cuerpo pantalla Registro
+  -----------------------------------
+*/
+
+.TituPerfi {
+    color: #3D0059;
+}
+
+.imagen_R {
+    box-shadow: 29px 28px 9px 4px rgba(0, 0, 0, 0.322);
+}
+
+.cuadroText {
+    color: #352E77;
+}
+
+.letraCar {
+    color: #000055;
+}
+
+.letraPer {
+    color: #000055;
+}
+
+.botoncitoMas {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+select {
+    border-color: blueviolet !important;
+}
+
+.BotonActualizar {
+    margin-top: 50px;
+}
+
+.BotonActualizar:hover {
+    filter: invert(40);
+}
+
+/*-----------------------------------
+        Cuerpo pantalla index
+  -----------------------------------
+*/
+
+
+.noti1 img {
+    height: 350px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 9px 14px 15px 2px #4a4a4a;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    transition: 1s;
+    display: flex;
+    transform: rotateY(-60deg);
+}
+
+/*Codigo que realiza una funcion. al pasar sobre la imagen*/
+.noti1 img:hover {
+    opacity: 85%;
+    transform: none;
+}
+
+@keyframes myAnim {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.noti2 img {
+    height: 350px;
+    width: 500px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 9px 14px 15px 2px #4a4a4a;
+    animation: animacionNoti2 2s ease 0s 1 normal forwards;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(-60deg);
+}
+
+.noti2 img:hover {
+    opacity: 85%;
+    transform: none;
+}
+
+@keyframes animacionNoti2 {
+    0% {
+        transform: scale(0.5);
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: 50% 100%;
+    }
+}
+
+.noti3 img {
+    height: 350px;
+    width: 500px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 9px 14px 15px 2px #4a4a4a;
+    animation: animacionNoti3 2s ease 0s 1 normal forwards;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(-60deg);
+}
+
+.noti3 img:hover {
+    opacity: 85%;
+    transform: none;
+}
+
+
+@keyframes animacionNoti3 {
+    0% {
+        transform: scale(0.5);
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: 50% 100%;
+    }
+}
+
+/*Inicio codigo de textos fs-1*/
+.textNoti1 {
+    color: #1F1B47;
+    margin-top: 100px;
+    padding: 20px;
+    transition: 1s;
+    letter-spacing: normal;
+    animation: textitoTitulo 2s ease 0s 1 normal forwards;
+}
+
+.textNoti {
+    color: #1F1B47;
+    transition: 1s;
+    letter-spacing: normal;
+    animation: textitoTitulo 2s ease 0s 1 normal forwards;
+}
+
+.textNoti:hover {
+    letter-spacing: .3em;
+}
+
+@keyframes textitoTitulo {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+/*Inicio codigo para las tarjetitas*/
+
+.imagen_tarjeta {
+    height: 250px;
+}
+
+.btn_ver_mas {
+    background-color: #1D1C6A;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 4px 35px;
+}
+
+.btn_ver_mas:hover {
+    background-color: #1F1B47;
+    color: #f3fefe;
+    box-shadow: 9px 14px 15px 2px #4a4a4ac0;
+}
+
+.botonComprar:hover {
+    box-shadow: 9px 14px 15px 2px #4a4a4a;
+}
+
+/*Carrousel tarjetas*/
+
+.container-carousel {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(74, 35, 152, 0.6530987394957983) 100%);
+    box-shadow: 9px 14px 15px 2px #4a4a4a;
+
+}
+
+/* Cambiar el color del icono del botón "Anterior" del carrusel */
+.carousel-control-prev-icon {
+    border-radius: 30px;
+    background-color: #621286;
+}
+
+/* Cambiar el color del icono del botón "Siguiente" del carrusel */
+.carousel-control-next-icon {
+    border-radius: 30px;
+    background-color: #621286;
+}
+
+
+/* Ajustando el tamaño de las tarjetas dentro del carrousel del index */
+.img-wrapper {
+    max-width: 100%;
+    height: 17em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+.card {
+    margin: 0.5rem;
+    background-color: #CCC9EE;
+}
+
+
+/* Animacion para fondo en index */
+.body {
+    background: linear-gradient(315deg, rgba(101, 0, 94, 1) 3%, rgb(160, 60, 206) 38%, rgb(216, 48, 238) 68%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+/*----------------------------------------
+    Cuerpo pantalla marca en especifico
+  ---------------------------------------
+*/
+
+.espaciado_imagen {
+    margin-top: 100px;
+    box-shadow: 9px 14px 15px 2px #4a4a4a85;
+}
+
+.tarjeta_categoria {
+    background-color: #b069eb;
+    box-shadow: 9px 14px 15px 2px #4a4a4a85;
+}
+
+.tarjeta_categoria:hover {
+    background-color: #1F1B47;
+}
+
+
+/*-----------------------------------
+        Cuerpo pantalla Categoria
+  -----------------------------------
+*/
+
+.elementoCategoria {
+    margin-top: 100px;
+}
+
+.elementoCategoria img {
+    width: 300px;
+}
+
+.textCat {
+    color: #1F1B47;
+    letter-spacing: normal;
+}
+
+/*-----------------------------------
+        Cuerpo pantalla Marcas
+  -----------------------------------
+*/
+
+.textMarca {
+    margin-top: 140px;
+    color: #1F1B47;
+    transition: 1s;
+    letter-spacing: normal;
+    animation: textitoTitulo 2s ease 0s 1 normal forwards;
+}
+
+.btn_marca {
+    background-color: #1D1C6A;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.btn_marca:hover {
+    background-color: #1F1B47;
+    color: #f3fefe;
+    box-shadow: 9px 14px 15px 2px #4a4a4ac0;
+}
+
+.imagen_marca {
+    height: 260px;
+    width: 300px;
+}
+
+.liniaSeparadora {
+    border: 7px solid rgb(73, 0, 141);
+    border-radius: 5px;
+}
+
+.btn-link {
+    text-decoration: none;
+    /* Quitar subrayado del enlace */
+    color: inherit;
+    /* Heredar color del texto del botón */
+}
+
+.btn-link:hover {
+    color: #f3fefe;
+    text-decoration: none;
+}
+
+.tarjetaLanzamiento {
+    width: 400px;
+}
+
+.espaciado {
+    margin-top: 90px;
+}
+
+/*-----------------------------------
+        Cuerpo pantalla Registro
+  -----------------------------------
+*/
+
+.alineado {
+    margin-top: 100px;
+}
+
+.contenedorMayorRegistro {
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 26px;
+    border: 4px solid rgb(175, 170, 170);
+}
+
+.form-control {
+    border-color: rgb(0, 141, 40) !important;
+}
+
+.btnRegistrarse {
+    background-color: #1c6a1d;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 35px;
+}
+
+.btnRegistrarse:hover {
+    background-color: #1b4729;
+    color: #f3fefe;
+    box-shadow: 9px 14px 15px 2px #4a4a4ac0;
+}
+
+.enlacito {
+    font-size: large;
+}
+
+.enlacito:hover {
+    border-color: transparent;
+    box-shadow: 9px 14px 15px 2px #4a4a4ac0;
+}
+
+button a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+
+.TituPerfiClie {
+    color: #005919;
+}
+
+/*-----------------------------------
+        Cuerpo pantalla carrito
+  -----------------------------------
+*/
+.star {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #b6b5b5;
+    font-size: 30px;
+    transition: color 3.0s;
+    margin-left: 40px;
+}
+
+.listacarrito {
+    padding-top: 90px;
+}
+
+.stark {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: gold;
+    font-size: 30px;
+    transition: color 3.0s;
+    margin-left: 40px;
+}
+
+.star:hover .star:checked {
+    color: gold;
+}
+
+
+.corazonc {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #b6b5b5;
+    font-size: 50px;
+    transition: color 3.0s;
+    transition: font 3.0s;
+    display: flex;
+    margin-left: 400px;
+}
+
+.corazonc:hover {
+    color: #ff0000;
+    font-size: 55px;
+}
+
+.btnañacarrito {
+    background-color: #1D1C6A !important;
+    color: #fefefe;
+    width: 180px;
+}
+
+.btnañacarrito:hover {
+    background-color: #0a093b !important;
+    color: #fefefe;
+    box-shadow: 9px 14px 15px 2px #4a4a4ac0;
+}
+
+.corazonc:hover .corazonc:checked {
+    color: gold;
+}
+
+.tableComen {
+    padding: 60px !important;
+    margin: 30px !important;
+    width: 650px;
+    height: 350px;
+    border-radius: 30px;
+    padding-bottom: 50px;
+    margin-right: 410px;
+}
+
+
+.conteinercarrito {
+    padding-top: 20px;
+    margin: 10px;
+}
+
+
+.btnañacarrito {
+    margin-right: 400px;
+}
+
+.precioCarito {
+    display: flex;
+    margin-left: 90px;
+}
+
+.contenCaarr {
+    width: 100px;
+    float: left;
+    display: flex;
+}
+
+.letraPer {
+    margin-left: 40px;
+    padding-top: 20px;
+}
+
+
+.comenta .cocomen {
+    width: 30px;
+}
+
+.CuantasEstrellas {
+    margin-left: 40px;
+}
+
+.cuadroTextComen {
+    border-radius: 30px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.671);
+    margin-left: 50px;
+}
+
+.btnComi {
+    background-color: #11a116;
+}
+
+.interes {
+    display: flex;
+}
+
+/*-----------------------------------
+        Cuerpo pantalla Contactos
+  -----------------------------------
+*/
+
+div iframe {
+    border-radius: 70px;
+    border: 10px solid #11a116;
+}
+
+.decoCuadros {
+    background-color: #11a116;
+    color: aliceblue;
+    border-radius: 40px;
+    font-size: x-large;
+}
+
+.fonditoContactos {
+    background: rgb(12, 155, 39);
+    background: linear-gradient(236deg, rgb(9, 170, 65) 21%, rgb(29, 253, 70) 54%, rgb(7, 165, 36) 86%);
+}
+
+/*historia*/
+
+.historia_card ul {
+    list-style-type: none;
+    /* Elimina los puntos */
+    padding: 0;
+    /* Elimina el relleno interno */
+    margin: 0;
+    /* Elimina el margen externo */
+}
+
+/*historia*/
+
+.producto_imagen {
+    margin-top: 10rem
+}
+
+
+
+/* Modal */
+.modal {
+    z-index: 1050; /* Asegura que el modal esté por encima del resto del contenido */
+    overflow-y: auto; /* Permite desplazarse verticalmente dentro del modal si es necesario */
+}
+
+.modal-dialog {
+    max-width: 60%; /* Ajusta el ancho máximo del modal según sea necesario */
+    margin: 1rem auto; /* Centra el modal verticalmente */
+}
+
+.modal-content {
+    border-radius: 20px; /* Ajusta el radio de borde del modal */
+}
+
+.modal-header {
+    background-color: #11a116;
+    color: white;
+    border-bottom: none; /* Elimina el borde inferior del encabezado */
+}
+
+.modal-body {
+    background-color: #fefefe; /* Color de fondo del cuerpo del modal */
+}
+
+.modal-footer {
+    background-color: #fefefe; /* Color de fondo del pie del modal */
+    border-top: none; /* Elimina el borde superior del pie del modal */
+}
+
+.modal-backdrop {
+    z-index: 1040; /* Asegura que el fondo oscuro esté por debajo del modal */
+}
+
+
+/* Parte de buscador */
+
+.buscador1{
+    background-color: #005906;
+    color: white;
+}
+
+.buscador2{
+    background-color: #109048;
+    color: white;
+}
+
+.direccioncuadro
+{
+    background-color: #109048;
+    color: white;
+    border: 10px;
+    border-radius: 50px;
+}

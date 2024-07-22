@@ -1,0 +1,36 @@
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #b05cff;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+    background-color: #b05cff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #41007e;
+}
+
+.textoRegistros {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.tamañoScrool {
+    max-height: 400px;
+    overflow-y: auto;
+}
+/* Borde divisor en graficas */
+.texto-beneficio {
+    height: 100%; /* Para que la línea ocupe toda la altura del contenedor */
+    border-left: 6px solid rgb(164, 0, 179);
+}
+
+.grafica{
+    background: linear-gradient(rgba(138, 138, 138, 0.274), rgba(177, 177, 177, 0.247));
+    border-radius: 20px;
+    align-items: center;
+    align-content: center;
+}
