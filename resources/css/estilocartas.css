@@ -30,16 +30,6 @@
 
 /* Contenedor para mostrar detalles de la marca seleccionada  */
 
-.contenedorPadreMarca {
-    background: linear-gradient(146deg, #16ba58, #137f1a, #21ac46, #199d19);
-    background-size: 240% 240%;
-    animation: gradient-animation 8s ease infinite;
-    border-radius: 18px;
-    width: 80%;
-    box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
-    -webkit-box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
-    -moz-box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
-}
 
 
 

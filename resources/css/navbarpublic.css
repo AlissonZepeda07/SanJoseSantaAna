@@ -1,0 +1,21 @@
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #45a049;
+}

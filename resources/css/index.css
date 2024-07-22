@@ -66,7 +66,7 @@ main {
 }
 
 .navbar-brand {
-    color: #f3fefe !important;
+    color: #000000 !important;
     font-size: 30px !important;
 }
 
@@ -117,14 +117,6 @@ select {
 
 
 /* fin de Perfil */
-
-.Fondo {
-    background: url(../img/fondo_inicio.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 70%;
-    align-items: center;
-}
 
 input {
     border-color: rgb(43, 226, 110) !important;
