@@ -42,8 +42,11 @@
         background-position: top center; /* Ajusta la posición en pantallas pequeñas */
     }
 }
-  
 
+.btnTemario {
+    border: 0;
+    border-radius: 20px;
+}
 
 
 

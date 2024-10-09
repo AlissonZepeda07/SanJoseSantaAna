@@ -26,7 +26,6 @@ header.innerHTML = `<nav class="navbar navbar-expand-lg navbar-light bg-light">
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Pilet</a>
-                        <a class="dropdown-item" href="#">Historia</a>
                         <a class="dropdown-item" href="#">Extracurricular</a>
                     </div>
                 </li>

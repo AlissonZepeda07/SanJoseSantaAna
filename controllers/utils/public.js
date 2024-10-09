@@ -53,7 +53,7 @@ MAIN.insertAdjacentHTML('beforebegin', `
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Pilet</a>
-                        <a class="dropdown-item" href="#">Historia</a>
+
                         <a class="dropdown-item" href="#">Extracurricular</a>
                     </div>
                 </li>
@@ -92,7 +92,6 @@ MAIN.insertAdjacentHTML('beforebegin', `
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Pilet</a>
-                        <a class="dropdown-item" href="#">Historia</a>
                         <a class="dropdown-item" href="#">Extracurricular</a>
                     </div>
                 </li>
@@ -170,7 +169,7 @@ MAIN.insertAdjacentHTML('beforebegin', `
           }
         }
       });
-      
+
   	$('.owl-banner').owlCarousel({
 		center: true,
       items:1,
@@ -204,3 +203,5 @@ MAIN.insertAdjacentHTML('beforebegin', `
 		}
       }
 	});
+
+

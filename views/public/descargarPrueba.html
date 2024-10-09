@@ -17,7 +17,7 @@
 </head>
 <nav class="navbar bg-body-tertiary justify-content-end d-block fixed-top">
     <div class="container-fluid justify-content-end">
-        <button type="button" class="btn btn-success" onclick="window.location.href='index.html'">
+        <button type="button" class="btn btn-success" onclick="window.location.href='admision.html'">
             <img src="../../resources/img/regresoAdmision.png" alt="Regreso" style="width: 60px; height: 60px;">
         </button>
     </div>
@@ -32,90 +32,63 @@
     <main class="espaciado">
         <!-- Sección de inicio de sesión -->
         <div class=" col-lg-12 text-center">
-            <img src="../../resources/img/logoMejorado.png" class="logoAdmi">
-            <h2>Admision 2024</h2>
+            <h2>Temarios de admision 2024</h2>
         </div>
-        <div class="row contenedorMayorRegistro m-5 justify-content-center">
-            <form class="g-3 col-lg-10 col-md-8 col-sm-10" id="signupForm">
-                <div class="text-center">
-                    <h3>Aspirante</h3>
-                    <br>
-                    <!-- Campo oculto para asignar el token del reCAPTCHA -->
-                    <input type="text" class="d-none" id="gRecaptchaResponse" name="gRecaptchaResponse">
-
-                    <!--Input de nombre-->
-                    <div class="form-group">
-                        <input type="text" class="form-control cuadroText fs-3" name="nombre" id="nombre"
-                            oninput="formatAlphabetic(this)" placeholder="Nombre aspirante..." required>
+        <div class="row contenedorMayorRegistro m-5 align-content-center text-center justify-content-center">
+            <div class="d-grid gap-2 col-8 mx-auto align-content-center text-center justify-content-center">
+                <br><br>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <button class="btn btnTemario btn-primary btn-lg text-bg-warning h-100 d-flex flex-column align-items-center mx-2" type="button" style="padding: 20px; width: calc(100% - 16px);">
+                            <img src="../../resources/img/libroTemario.png" alt="">
+                            <p class="p-2 mb-1 fw-bold">Parvularia</p>
+                            <p class="mb-0">Etapa Inicial para Niños</p>
+                        </button>
                     </div>
-                    <br>
-                    <!--Input de Correo-->
-                    <div class="form-group">
-                        <input type="email" class="form-control cuadroText fs-3" name="correo" id="correo"
-                            oninput="formatEmail(this)" placeholder="Escriba su correo..." required>
+                    <div class="col">
+                        <button class="btn btnTemario btn-primary btn-lg text-bg-warning h-100 d-flex flex-column align-items-center mx-2" type="button" style="padding: 20px; width: calc(100% - 16px);">
+                            <img src="../../resources/img/ceberoTemario.png" alt="">
+                            <p class="p-2 mb-1 fw-bold">Parvularia</p>
+                            <p class="mb-0">Etapa Inicial para Niños</p>
+                        </button>
                     </div>
-                    <br>
-                    <!--Input de Edad-->
-                    <div class="form-group">
-                        <input type="text" class="form-control cuadroText fs-3" name="edad" id="edad" placeholder="Edad"
-                            required>
+                    <div class="col">
+                        <button class="btn btnTemario btn-primary btn-lg text-bg-warning h-100 d-flex flex-column align-items-center mx-2" type="button" style="padding: 20px; width: calc(100% - 16px);">
+                            <img src="../../resources/img/cuadernoTemario.png" alt="">
+                            <p class="p-2 mb-1 fw-bold">Parvularia</p>
+                            <p class="mb-0">Etapa Inicial para Niños</p>
+                        </button>
                     </div>
-                    <br>
-                    <br>
-                    <!--Input de dirección-->
-                    <div class="form-group">
-                        <textarea class="form-control cuadroText fs-3 mb-4" name="direccion" maxlength="250"
-                            id="direccionCliente" rows="3" placeholder="Escriba su dirección acá" required></textarea>
+                    <div class="col">
+                        <button class="btn btnTemario btn-primary btn-lg text-bg-warning h-100 d-flex flex-column align-items-center mx-2" type="button" style="padding: 20px; width: calc(100% - 16px);">
+                            <img src="../../resources/img/libroTemario.png" alt="">
+                            <p class="p-2 mb-1 fw-bold">Parvularia</p>
+                            <p class="mb-0">Etapa Inicial para Niños</p>
+                        </button>
                     </div>
-                    <br>
-                    <h3>Datos de encargado</h3>
-                    <br>
-                    <!--Input de nombre del encargado-->
-                    <div class="form-group">
-                        <input type="text" class="form-control cuadroText fs-3" name="nombreEncargado"
-                            id="nombreEncargado" oninput="formatAlphabetic(this)" placeholder="Nombre del encargado..."
-                            required>
+                    <div class="col">
+                        <button class="btn btnTemario btn-primary btn-lg text-bg-warning h-100 d-flex flex-column align-items-center mx-2" type="button" style="padding: 20px; width: calc(100% - 16px);">
+                            <img src="../../resources/img/ceberoTemario.png" alt="">
+                            <p class="p-2 mb-1 fw-bold">Parvularia</p>
+                            <p class="mb-0">Etapa Inicial para Niños</p>
+                        </button>
                     </div>
-                    <br>
-                    <!--Input de Correo del encargado-->
-                    <div class="form-group">
-                        <input type="email" class="form-control cuadroText fs-3" name="correoEncargado"
-                            id="correoEncargado" oninput="formatEmail(this)" placeholder="Correo del encargado..."
-                            required>
-                    </div>
-                    <br>
-                    <!--Input de Teléfono del encargado-->
-                    <div class="form-group">
-                        <input type="text" class="form-control cuadroText fs-3" name="telefonoEncargado"
-                            id="telefonoEncargado" oninput="formatPhoneNumber(this)"
-                            placeholder="Telefono del encargado" required>
-                    </div>
-                    <br>
-                    <!--Input de DUI del encargado-->
-                    <div class="form-group">
-                        <input type="text" class="form-control cuadroText fs-3" name="duiEncargado" id="duiEncargado"
-                            oninput="formatDui(this)" placeholder="Dui del encargado" required>
+                    <div class="col">
+                        <button class="btn btnTemario btn-primary btn-lg text-bg-warning h-100 d-flex flex-column align-items-center mx-2" type="button" style="padding: 20px; width: calc(100% - 16px);">
+                            <img src="../../resources/img/cuadernoTemario.png" alt="">
+                            <p class="p-2 mb-1 fw-bold">Parvularia</p>
+                            <p class="mb-0">Etapa Inicial para Niños</p>
+                        </button>
                     </div>
                 </div>
-                <br>
-                <br>
-            </form>
+                <br><br>
+            </div>
         </div>
+        
+        
 
 
-        <div class="container d-grid gap-2 col-5 mx-auto">
-            <button type="button" class="btnEnviar mx-auto fw-bold btn btn-success">Enviar</button>
-        </div>
-        <div>
-            <hr>
-            <br>
-            <br>
-            <h3>Prueba Diagnostica
-                <button onclick="window.location.href='descargarPrueba.html'" type="button" style="background-color: rgb(236, 236, 236);" class="btn btn-link"> <img
-                        src="../../resources/img/descargaPrueba.png" class="descarga">
-                </button>
-            </h3>
-        </div>
+
 
 
 
