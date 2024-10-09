@@ -4,14 +4,14 @@
 */
 
 // Constante para completar la ruta de la API.
-const USER_API = 'services/public/cliente.php';
+const USER_API = 'services/public/colegio.php';
 // Constante para establecer el elemento del contenido principal.
 const MAIN = document.querySelector('main');
 MAIN.style.paddingTop = '75px';
 MAIN.style.paddingBottom = '100px';
 MAIN.classList.add('container');
 // Se establece el título de la página web.
-document.querySelector('title').textContent = 'IvaneCare - Store';
+document.querySelector('title').textContent = 'Colegio San Jose';
 // Constante para establecer el elemento del título principal.
 const MAIN_TITLE = document.getElementById('mainTitle');
 
@@ -100,18 +100,107 @@ MAIN.insertAdjacentHTML('beforebegin', `
         </div>
     </nav>`);
 }
-// Se agrega el pie de la página web después del contenido principal.
-MAIN.insertAdjacentHTML('afterend', `
-<footer class = "test">
-    <div class="social-icons-container ">
-        <a href="https://www.instagram.com/ivanecare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank" class="social-icons"></a>
-        <a href="https://www.threads.net/@ivanecare" target="_blank" class="social-icons"></a>
-        <a href="https://www.facebook.com/profile.php?id=61556911452120" target="_blank" class="social-icons"></a>
-    </div>
-    <ul class="footer-menu-conteiner">
-    </ul>
-    <span class="copyright">&copy;2024, IVANE CARE. All rights reserved</span>
-</footer>
-`);
-}
+    // Se agrega el pie de la página web después del contenido principal.
+    MAIN.insertAdjacentHTML('afterend', `
+       <footer class="test ">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>San Jose</h3>
+                    <p class="fw-light">En Colegio Salesiano San José de Santa Ana tiene más de cien años de educar a la juventud para formar Buenos Cristianos y Honrados Ciudadanos.</p>
+                </div>
+                <div class="footer-column">
+                    <p>
+                        <h3>Redes Sociales</h3>
+                        <a href="hhttps://www.facebook.com/CSSJSA/" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/cssj_sv/?hl=es" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <p>Educacion<br><br>
+                    Formacion<br><br>
+                    Valores</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact us</h3>
+                    <p>Black Hodoris Taekwondo, final calle 17 av 5 de marzo contiguo a colegio San Jose, Santa Ana.<br><br>
+                    +503 2486 0800<br><br>
+                    recepcion@salesianosanjose.edu.sv
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2024, All Right Reserved <a
+                                        href="https://codepen.io/anupkumar92/">Here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </footer>
+        `);
+    }
+
+    /*Funcion para las tarjetas de extracurriculares*/
+    function toggleCard(button) {
+        const cardFlip = button.closest('.card-flip');
+        cardFlip.classList.toggle('flipped');
+    }
+
+    $('.owl-testimonials').owlCarousel({
+        center: true,
+        items:1,
+        loop:true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        margin:30,
+        responsive:{
+          992:{
+              items:1
+          },
+          1200:{
+              items:1
+          }
+        }
+      });
+      
+  	$('.owl-banner').owlCarousel({
+		center: true,
+      items:1,
+      loop:true,
+      nav: true,
+	  navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      margin:30,
+      responsive:{
+        992:{
+            items:1
+        },
+		1200:{
+			items:1
+		}
+      }
+	});
+
+	$('.owl-testimonials').owlCarousel({
+	  center: true,
+      items:1,
+      loop:true,
+      nav: true,
+	  navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      margin:30,
+      responsive:{
+        992:{
+            items:1
+        },
+		1200:{
+			items:1
+		}
+      }
+	});

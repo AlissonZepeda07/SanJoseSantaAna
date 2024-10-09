@@ -1,0 +1,59 @@
+.logoAdmi{
+  
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.btnEnviar {
+    width: 100%; /* Ancho completo del contenedor */
+    border-radius: 25px; /* Borde redondeado */
+    background: linear-gradient(to bottom, #39e35e, #0c6f23); /* Degradado de verde a blanco */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin borde adicional */
+    
+}
+
+.btnEnviar:hover {
+    background: linear-gradient(to bottom, #39e35e, #0c6f23); /* Degradado más oscuro en hover */
+}
+
+.descarga{
+  
+    max-width: 50px;
+    max-height: 50px;
+}
+.Fondo {
+    background: url('../../resources/img/fondoAdminicion.png') no-repeat center center fixed;
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-blend-mode: darken; /* Combina el fondo con el color oscuro */
+    min-height: 100vh; /* Asegura que cubra toda la pantalla */
+}
+
+.contenido {
+    position: relative; /* Mantiene el contenido sobre el fondo */
+    z-index: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Hacer el sitio responsive */
+@media only screen and (max-width: 768px) {
+    body {
+        background-position: top center; /* Ajusta la posición en pantallas pequeñas */
+    }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

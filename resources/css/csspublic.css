@@ -7,6 +7,11 @@
     box-sizing: border-box;
     transition: 0.5s;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+
 
 .producto_index {
     height: 30px;
@@ -22,11 +27,12 @@ main {
 
 .container {
     padding-bottom: 50px;
+    
 }
 
 
 input {
-    border-color: rgb(14, 156, 18) !important;
+    border-color: rgb(233, 233, 233) !important;
 }
 
 .test {
@@ -77,31 +83,34 @@ footer {
     margin-bottom: 1rem;
 }
 
-
-.social-icons {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid #fefefe;
-    background-image: url(../img/imagen_f.png);
+.ImgHeader {
+    background-image: url('../../resources/img/admisionJose.jpg');
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
     background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    margin: 1rem;
+    /* Centra la imagen */
+    height: calc(108vh - 56px);
+    /* Ajusta la altura para que sea responsive, restando la altura del navbar */
+    display: flex;
+    flex-direction: column;
+    /* Apilar los elementos verticalmente */
+    align-items: flex-start;
+    /* Alinear a la izquierda */
+    padding-left: 20px;
+    padding-top: 400px;
+    margin: 0;
+    /* Elimina el margen por defecto */
+    font-family: 'Alfa Slab One';
+    /* Ajusta este valor para mover el texto hacia abajo */
+
 }
 
-.social-icons:hover {
-    background-color: #000000;
-    filter: invert(40)
-}
-
-.social-icons:nth-last-of-type(2) {
-    background-image: url(../img/imagen_t.png);
-}
-
-.social-icons:nth-last-of-type(3) {
-    background-image: url(../img/imagen_i.png);
-}
+h2.accordion-header button {
+    padding: 15px 25px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+  }
 
 
 .footer-menu-conteiner {
@@ -118,48 +127,6 @@ footer {
 
 /*-----------------------------------
         Cuerpo pantalla Registro
-  -----------------------------------
-*/
-
-.TituPerfi {
-    color: #3D0059;
-}
-
-.imagen_R {
-    box-shadow: 29px 28px 9px 4px rgba(0, 0, 0, 0.322);
-}
-
-.cuadroText {
-    color: #352E77;
-}
-
-.letraCar {
-    color: #000055;
-}
-
-.letraPer {
-    color: #000055;
-}
-
-.botoncitoMas {
-    margin-left: 50px;
-    margin-top: 40px;
-}
-
-select {
-    border-color: blueviolet !important;
-}
-
-.BotonActualizar {
-    margin-top: 50px;
-}
-
-.BotonActualizar:hover {
-    filter: invert(40);
-}
-
-/*-----------------------------------
-        Cuerpo pantalla index
   -----------------------------------
 */
 
@@ -353,9 +320,7 @@ select {
 
 
 
-
 .card {
-    margin: 0.5rem;
     background-color: #CCC9EE;
 }
 
@@ -378,20 +343,33 @@ select {
 
 
 /* Animacion para fondo en index */
-.body {
-    background: linear-gradient(315deg, rgb(0, 101, 35) 3%, rgb(16, 147, 14) 38%, rgb(3, 167, 39) 68%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
+.descarga{
+  
+    max-width: 50px;
+    max-height: 50px;
+}
+.Fondo {
+    background: url('../../resources/img/vistaFondo.png') no-repeat center center fixed;
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-blend-mode: darken; /* Combina el fondo con el color oscuro */
+    min-height: 100vh; /* Asegura que cubra toda la pantalla */
 }
 
-.Fondo {
-    background: url(../img/fondoAdminicion.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50%;
-    align-items: center;
+.contenido {
+    position: relative; /* Mantiene el contenido sobre el fondo */
+    z-index: 1;
+    color: #fff;
 }
+
+/* Hacer el sitio responsive */
+@media only screen and (max-width: 768px) {
+    body {
+        background-position: top center; /* Ajusta la posición en pantallas pequeñas */
+    }
+}
+
+
+
 
 @keyframes gradient {
     0% {
@@ -471,7 +449,7 @@ select {
 }
 
 .tarjeta_categoria:hover {
-    background-color: #1F1B47;
+    background-color: #fefdff;
 }
 
 
@@ -537,6 +515,15 @@ select {
     /* Heredar color del texto del botón */
 }
 
+.Extracurricular{
+    background-color:#dbdbdb;
+    border-radius: 10px;
+    max-height: 2000px;
+    max-width: 220px;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-link:hover {
     color: #f3fefe;
     text-decoration: none;
@@ -560,17 +547,18 @@ select {
 }
 
 .contenedorMayorRegistro {
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: #F6F6F6;
     border-radius: 26px;
-    border: 4px solid rgb(175, 170, 170);
+    border: 4px solid rgb(255, 255, 255);
 }
 
 .form-control {
-    border-color: rgb(0, 141, 40) !important;
+    border-radius: 20px;
+    background-color: #ECECEC;
 }
 
 .btnRegistrarse {
-    background-color: #1c6a1d;
+    background-color: #ffffff;
     color: white;
     cursor: pointer;
     border-radius: 20px;
@@ -820,6 +808,102 @@ div iframe {
 {
     background-color: #109048;
     color: white;
-    border: 10px;
+
     border-radius: 50px;
+}
+
+
+/*TARJETAS DE EXTRACURRICULARES*/
+
+.card-flip {
+    position: relative;
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: 300px; /* Altura fija para tarjetas más grandes */
+    perspective: 1000px;
+}
+
+.card-flip > .front,
+.card-flip > .back {
+    position: absolute;  
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta el lado posterior cuando se rota */
+    transition: transform 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-flip > .front {
+    transform: rotateY(0deg);
+}
+
+.card-flip > .back {
+    transform: rotateY(180deg);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px; /* Reduce el padding para que el texto no se salga */
+    display: flex;
+    flex-direction: column; /* Asegúrate de que el texto se apile */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.card-flip > .front img {
+    width: 100%;
+    height: 100%; /* Ocupar todo el espacio de la tarjeta */
+    object-fit: cover; /* Mantiene la imagen dentro de la tarjeta */
+}
+
+.text {
+    color: white;
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    padding: 10px; /* Reduce el padding */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    z-index: 2;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow:active {
+    transform: scale(0.9);
+}
+
+/* Agregar rotación para la tarjeta completa */
+.card-flip {
+    transform-style: preserve-3d;
+}
+
+.card-flip.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card-flip {
+        height: 250px; /* Ajuste en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-flip {
+        height: 200px; /* Para pantallas muy pequeñas */
+    }
 }

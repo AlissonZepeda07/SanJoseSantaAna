@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../resources/css/css_boostrap.css">
     <link rel="stylesheet" href="../../resources/css/csspublic.css">
     <link rel="stylesheet" href="../../resources/css/boton.css">
+    <link rel="stylesheet" href="../../resources/css/footer.css">
+    <link rel="stylesheet" href="../../resources/css/admision.css">
     <link type="text/css" rel="stylesheet" href="../../resources/css/bootstrap-icons.min.css">
 
 </head>
@@ -30,62 +32,143 @@
     <main class="espaciado">
         <!-- Sección de inicio de sesión -->
         <div class=" col-lg-12 text-center">
-            <img src="../../resources/img/instituttosanjose.png" alt="" width="500px">
+            <img src="../../resources/img/logoMejorado.png" class="logoAdmi">
             <h2>Admision 2024</h2>
         </div>
-        <div class="row  contenedorMayorRegistro m-5">
-            <form class="g-3" id="signupForm">
-                <div class="row">
-                    <!--Apartado de todos los inputs-->
-                    <div class="col-lg">
-                        <h3 class="justify-content-center text-center">Aspirante</h3>
-                        <br>
-                        <!-- Campo oculto para asignar el token del reCAPTCHA -->
-                        <div class="justify-content-center row-4">
-                            <input type="text" class="d-none" id="gRecaptchaResponse" name="gRecaptchaResponse">
-                            <!--Input de nombre-->
-                            <div class="form-group">
-                                <input type="text" class="form-control cuadroText col-md-3 fs-3 " name="nombreCliente"
-                                    id="nombreCliente" placeholder="Nombre aspirante..." required>
-                            </div>
-                            <br>
-                            <!--Input de Correo-->
-                            <div class="form-group">
-                                <input type="email" class="form-control cuadroText col-md-3 fs-3 " name="correoCliente"
-                                    id="correoCliente" placeholder="Escriba su correo..." required>
-                            </div>
-                            <br>
-                            <!--Input de nombre-->
-                            <div class="form-group">
-                                <input type="text" class="form-control cuadroText col-md-3 fs-3 " name="nombreCliente"
-                                    id="nombreCliente" placeholder="Edad" required>
-                            </div>
-                            <!--Input de Telefono-->
-                            <div class="form-group">
-                                <label for="telefonoCliente" class="letraPer mt-3 fs-3">Número de telefono</label>
-                                <input type="text" class="form-control cuadroText col-md-3 fs-3 " name="telefonoCliente"
-                                    id="telefonoCliente" placeholder="0000-0000" required>
-                                <!--Input de direccion-->
-                                <div class="form-group">
-                                    <label for="direccionCliente"
-                                        class="letraPer mt-3 fs-3">Residencia/Dirección</label>
-                                    <textarea class="form-control cuadroText col-md-3 fs-3  mb-4"
-                                        name="direccionCliente" maxlength="250" id="direccionCliente" rows="3"
-                                        placeholder="Escriba su dirección aca" required></textarea>
-                                </div>
-                            </div>
-                        </div>
+        <div class="row contenedorMayorRegistro m-5 justify-content-center">
+            <form class="g-3 col-lg-10 col-md-8 col-sm-10" id="signupForm">
+                <div class="text-center">
+                    <h3>Aspirante</h3>
+                    <br>
+                    <!-- Campo oculto para asignar el token del reCAPTCHA -->
+                    <input type="text" class="d-none" id="gRecaptchaResponse" name="gRecaptchaResponse">
+
+                    <!--Input de nombre-->
+                    <div class="form-group">
+                        <input type="text" class="form-control cuadroText fs-3" name="nombre" id="nombre"
+                            oninput="formatAlphabetic(this)" placeholder="Nombre aspirante..." required>
                     </div>
+                    <br>
+                    <!--Input de Correo-->
+                    <div class="form-group">
+                        <input type="email" class="form-control cuadroText fs-3" name="correo" id="correo"
+                            oninput="formatEmail(this)" placeholder="Escriba su correo..." required>
+                    </div>
+                    <br>
+                    <!--Input de Edad-->
+                    <div class="form-group">
+                        <input type="text" class="form-control cuadroText fs-3" name="edad" id="edad" placeholder="Edad"
+                            required>
+                    </div>
+                    <br>
+                    <br>
+                    <!--Input de dirección-->
+                    <div class="form-group">
+                        <textarea class="form-control cuadroText fs-3 mb-4" name="direccion" maxlength="250"
+                            id="direccionCliente" rows="3" placeholder="Escriba su dirección acá" required></textarea>
+                    </div>
+                    <br>
+                    <h3>Datos de encargado</h3>
+                    <br>
+                    <!--Input de nombre del encargado-->
+                    <div class="form-group">
+                        <input type="text" class="form-control cuadroText fs-3" name="nombreEncargado"
+                            id="nombreEncargado" oninput="formatAlphabetic(this)" placeholder="Nombre del encargado..."
+                            required>
+                    </div>
+                    <br>
+                    <!--Input de Correo del encargado-->
+                    <div class="form-group">
+                        <input type="email" class="form-control cuadroText fs-3" name="correoEncargado"
+                            id="correoEncargado" oninput="formatEmail(this)" placeholder="Correo del encargado..."
+                            required>
+                    </div>
+                    <br>
+                    <!--Input de Teléfono del encargado-->
+                    <div class="form-group">
+                        <input type="text" class="form-control cuadroText fs-3" name="telefonoEncargado"
+                            id="telefonoEncargado" oninput="formatPhoneNumber(this)"
+                            placeholder="Telefono del encargado" required>
+                    </div>
+                    <br>
+                    <!--Input de DUI del encargado-->
+                    <div class="form-group">
+                        <input type="text" class="form-control cuadroText fs-3" name="duiEncargado" id="duiEncargado"
+                            oninput="formatDui(this)" placeholder="Dui del encargado" required>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </form>
+        </div>
 
 
-                    <!-- Inclusión de la librería de mascaras. Para más información https://github.com/text-mask/text-mask -->
-                    <script type="text/javascript" src="../../resources/js/vanillaTextMask.js"></script>
-                    <!-- Inclusión de la librería del reCAPTCHA. Para más información https://developers.google.com/recaptcha/docs/v3 -->
-                    <script type="text/javascript"
-                        src="https://www.google.com/recaptcha/api.js?render=6LdBzLQUAAAAAJvH-aCUUJgliLOjLcmrHN06RFXT"></script>
+        <div class="container d-grid gap-2 col-5 mx-auto">
+            <button type="button" class="btnEnviar mx-auto fw-bold btn btn-success">Enviar</button>
+        </div>
+        <div>
+            <hr>
+            <br>
+            <br>
+            <h3>Prueba Diagnostica
+                <button type="button" style="background-color: rgb(236, 236, 236);" class="btn btn-link"> <img
+                        src="../../resources/img/descargaPrueba.png" class="descarga">
+                </button>
+            </h3>
+        </div>
+
+
+
+
+        <!-- Inclusión de la librería de mascaras. Para más información https://github.com/text-mask/text-mask -->
+        <script type="text/javascript" src="../../resources/js/vanillaTextMask.js"></script>
+        <!-- Inclusión de la librería del reCAPTCHA. Para más información https://developers.google.com/recaptcha/docs/v3 -->
+        <script type="text/javascript"
+            src="https://www.google.com/recaptcha/api.js?render=6LdBzLQUAAAAAJvH-aCUUJgliLOjLcmrHN06RFXT"></script>
     </main>
 
-    <footer class="test">
+    <footer style="background-color: #eee6d3;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                        style="width: 150px; height: 150px;">
+                        <img src="../../resources/img/logoc.png" loading="lazy" />
+                    </div>
+                    <p>
+                        Colegio Salesiano San José de Santa Ana tiene más de cien años de educar a la juventud para
+                        formar Buenos Cristianos y Honrados Ciudadanos
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="container d-flex flex-column align-items-center py-5">
+                        <!-- Botón de Facebook -->
+                        <a href="https://www.facebook.com/CSSJSA/" target="_blank"
+                            class="btn btn-primary btn-lg btn-floating mb-3" style="background-color: #117d37;">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <!-- Botón de Correo -->
+                        <a href="mailto:recepcion@salesianosanjose.edu.sv"
+                            class="btn btn-primary btn-lg btn-floating mb-3" style="background-color: #117d37;">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                        <!-- Botón de Instagram -->
+                        <a href="https://www.instagram.com/cssj_sv/?hl=es" target="_blank"
+                            class="btn btn-primary btn-lg btn-floating mb-3" style="background-color: #117d37;">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 d-flex flex-column align-items-center">
+                    <a href="https://maps.app.goo.gl/xDEtr2VG8gvo1L197" target="_blank"
+                        class="btn btn-primary btn-lg btn-floating mb-3" style="background-color: #117d37;">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </a>
+                    <h5 class="mb-3 text-dark">Ubicanos</h5>
+                    Black Hodoris Taekwondo, final calle 17 av 5 de marzo contiguo a colegio San Jose, Santa Ana
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- IMPORTACIÓN DE ARCHIVOS JAVASCRIPT -->
@@ -97,6 +180,7 @@
     <script type="text/javascript" src="../../controllers/utils/components.js"></script>
     <!--Enlaces para archivos javascript-->
     <script type="text/javascript" src="../../controllers/utils/public.js"></script>
+    <script type="text/javascript" src="../../controllers/utils/Validaciones.js"></script>
     <!-- Llamada al controlador de la página web -->
     <script type="text/javascript" src="../../controllers/public/registro.js"></script>
 

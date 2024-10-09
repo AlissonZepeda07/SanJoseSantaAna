@@ -5,20 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
-    <link rel="icon" href="../../resources/img/iconos/iconoPagina.ico">
     <link rel="stylesheet" href="../../resources/css/css_boostrap.css">
-    <link rel="stylesheet" href="../../resources/css/estilosanjose.css">
     <link rel="stylesheet" href="../../resources/css/csspublic.css">
+    <link rel="stylesheet" href="../../resources/css/footer.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../resources/css/estilocartas.css">
-    <link rel="stylesheet" href="navbarpublic.css">
+    <link rel="stylesheet" href="../../resources/fonts/Work Sans.css">
+    <link rel="stylesheet" href="../../resources/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="../../resources/css/owl.css">
+
+    
+
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#" style="width: 400px;">
-        <img src="../../resources/img/instituttosanjose.png" alt="Logo" style="width: 280px;">
-    
+    <a class="navbar-brand" href="../../views/public/index.html">
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+        <img src="../../resources/img/instituttosanjose.png" class="col" alt="Logo">
+    </div>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -30,10 +36,11 @@
                 <a class="nav-link" href="../../views/public/ofertaBachillerato.html">Ofertas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contactos</a>
+                <a class="nav-link" href="../../views/public/contactos.html">Contactos</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Otros
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -46,261 +53,550 @@
     </div>
 </nav>
 
-<body class="vistafondo">
+<body class="Fondo">
     <main>
+        <!--Imagen de encabezado entrada-->
+        <div class="ImgHeader">
+        </div>
         <!--Cuerpo principal de la pagina-->
         <div class="container contenedorPrincipal">
-  
-
-        <!-- imagen de entrada en carrusel -->
-        <div class="row justify-content-center">
-
-            <div id="carouselExampleIndicators justify-content-center" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../../resources/img/admisionJose.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../resources/img/eslogamJose.png" class="d-block w-100" alt="...">
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
         <br>
 
         <!------------------------------------
-            Apartado dofertas academicas
+            Apartado ofertas academicas
             ------------------------------------->
-        <div class="col texto-beneficio">
-            <p class="fs-4 fw-medium text-center">Ofertas Academicas </p>
-        </div>
 
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="card" style="width: 24rem; height: 25rem;">
-                    <img src="../../resources/img/academica.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Parvularia</p>
-                        <p class="card-text">Etapa Inicial para Niños</p>
+        <div class="text-center servicioIndex justify-content-center my-5 py-5">
+            <p class="fs-1 fw-medium font-weight-bold text-dark">Ofertas Academicas</p>
+            <p class="fst-italic mx-4">Ofertas academicas que tenemos en colegio San Jose para los alumnos de diferentes
+                niveles, cada una cada con el nivel académico es una
+                puerta abierta al conocimiento y al crecimiento personal.
+            </p>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+                <div class="col">
+                    <div class="card">
+                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                        <div class="cardPortfolio">
+                            <p class="fs-5 fw-bold mt-2">parvularia</p>
+                            <p class="fst-italic text-secondary">Etapa Inicial para Niños.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 24rem; height: 25rem;">
-                    <img src="../../resources/img/academica.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Primer Ciclo</p>
-                        <p class="card-text">Fundamentos Educativos Iniciales</p>
+                <div class="col">
+                    <div class="card">
+                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                        <div class="cardPortfolio">
+                            <p class="fs-5 fw-bold mt-2">Primer Ciclo</p>
+                            <p class="fst-italic text-secondary">Fundamentos Educativos Iniciales.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 24rem; height: 25rem;">
-                    <img src="../../resources/img/academica.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Segundo Ciclo</p>
-                        <p class="card-text">Preparación para Niveles Avanzados</p>
+                <div class="col">
+                    <div class="card">
+                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                        <div class="cardPortfolio">
+                            <p class="fs-5 fw-bold mt-2">Segundo Ciclo</p>
+                            <p class="fst-italic text-secondary">Preparación para Niveles Avanzados</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                        <div class="cardPortfolio">
+                            <p class="fs-5 fw-bold mt-2">Tercer Cicloe</p>
+                            <p class="fst-italic text-secondary">Educación Avanzada y Especializada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                        <div class="cardPortfolio">
+                            <p class="fs-5 fw-bold mt-2">Bachillerato general</p>
+                            <p class="fst-italic text-secondary">Educación Integral</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                        <div class="cardPortfolio">
+                            <p class="fs-5 fw-bold mt-2">Bachilleratos Tecnico</p>
+                            <p class="fst-italic text-secondary">Enfoque Práctico y Especializado</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
+         <!------------------------------------
+            Apartado pailet
+            ------------------------------------->
+        <div class="section about-us section services"  id="services">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="card" style="width: 24rem; height: 25rem;">
-                        <img src="../../resources/img/academica.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Tercer Ciclo</p>
-                            <p class="card-text">Educación Avanzada y Especializada</p>
+              <div class="row">
+                <div class="col-lg-6 offset-lg-1">
+                  <div class="accordion" id="accordionExample">
+                    <!-- Pregunta 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          FIDELIDAD A DON BOSCO
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Asunir el carisma salesiano a través de la viviencia de la Espiritualidad Salesiana y testimoniar los valores del "Sistema 
+                          Preventivo" de Don Bosco. Privilegiando la actitud  de simpatía, voluntad de encuentro y presencia entre los jóvenes.
                         </div>
+                      </div>
                     </div>
-                    <div class="card" style="width: 24rem; height: 25rem;">
-                        <img src="../../resources/img/academica.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Bachillerato general</p>
-                            <p class="card-text">Educación Integral</p>
+          
+                    <!-- Pregunta 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          INTEGRIDAD
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Actuar con transparencia y honestidad en todas las dimensiones de nuestra vida.
                         </div>
+                      </div>
                     </div>
-                    <div class="card"  onclick="window.location.href='ofertaBachillerato.html'" style="width: 24rem; height: 25rem;">
-                        <img src="../../resources/img/academica.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Bachilleratos Tecnico</p>
-                            <p class="card-text">Enfoque Práctico y Especializado</p>
+          
+                    <!-- Pregunta 3 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                         COMUNICACIÓN
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Interactuar asertivamente con los demás desde el respeto de su ser,
+                          reciprocidad de información y capacidad de escucha.
+        
                         </div>
+                      </div>
                     </div>
+          
+                    <!-- Pregunta 4 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                         TRABAJO EN EQUIPO
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Colaborar entre todos a fin de alcanzar un objetivo común, en
+                          nuestro caso, realizado en espíritu de familia (SDB-Laicos), reconociendo la riqueza y las
+                          cualidades del otro.
+                          
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Pregunta 5 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          RESPONSABILIDAD
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Asumir el quehacer personal y cotidiano de acuerdo al ideal de
+                          santidad de Don Bosco: "Al Señor le agrada que le sirvan con gusto, porque haciendolo con alegría y de corazón, se ama más a Dios". (MB XII 610)
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Pregunta 6 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          SOLIDARIDAD
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Manifestar la disposición de estar a la busqueda de soluciones ante las
+                          necesidades y problemas de los demás
+                           Respuesta a la Pregunta 6.
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Pregunta 7 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          LIDERAZGO
+                        </button>
+                      </h2>
+                      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Asumir el liderazgo participativo que implica animar positiva y efectivamente
+                          la ejecución del trabajo y la consecución de los objetivos.
+        
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Pregunta 8 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          CREATIVIDAD
+                        </button>
+                      </h2>
+                      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Actuar con libertad de pensamiento y acción para el encuentro de nuevas
+                          soluciones, en lo cotidiano, en la novedad y en la tradición.
+        
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Pregunta 9 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                          FE
+                        </button>
+                      </h2>
+                      <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Reconocer la presencia operante de Dios en nuestro quehacer y experimentarla como vida y amor, que motiva nuestro existir y todas nuestras actividades educativo pastorales
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-lg-5 align-self-center">
+                  <div class="section-heading">
+                    <h2 style="color:#fbba3f">VALORES</h2>
+                     <!-- Pregunta 9
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
+                    <div class="main-button">
+                      <a href="#">Discover More</a>
+                    </div>
+                     -->
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+          
         <!------------------------------------
             Apartado extracurriculares
             ------------------------------------->
-        <div class="col texto-beneficio">
-            <p class="fs-4 fw-medium text-center">Ofertas Academicas </p>
-        </div>
 
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="card" style="width: 24rem; height: 25rem;">
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../../resources/img/futbolsanjose.jpg" class="d-block w-60" alt="...">
+
+
+        <div class="text-center servicioIndex justify-content-center my-5 py-5">
+            <p class="fs-1 fw-medium font-weight-bold text-dark">Extracurriculares</p>
+            <p class="fst-italic mx-4">Ofrecemos mas que solo niveles academicos, compleatmos tambien en nuestra
+                institución,
+                las actividades extracurriculares son el complemento perfecto para una educación integral.
+            </p>
+
+            <br>
+            <div class="container mt-3"> <!-- Ajuste de margen -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Tarjeta 1 -->
+                    <div class="col mb-4 justify-content-center align-content-center">
+                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                            <h3 class="text-center bc-black ">Baloncesto</h3>
+                        </div>
+                        <br>
+                        <div class="card-flip">
+                            <div class="front card">
+                                <img src="../../resources/img/baloncestoSanJose.png" alt="Imagen de la tarjeta"
+                                    class="card-img-top">
+                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-right-fill"></i></button>
                             </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../../resources/img/futbolsanjose.jpg" class="d-block w-60" alt="...">
+                            <div
+                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                <div class="card-body">
+                                    <p>Desata tu pasión por el baloncesto en nuestras prácticas dinámicas y
+                                        emocionantes.
+                                        Desde perfeccionar tus tiros hasta desarrollar tu agilidad y resistencia.
+                                    </p>
                                 </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                            <div class="card-body">
+                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-left-fill"></i></button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card" style="width: 24rem; height: 25rem;">
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../../resources/img/futbolsanjose.jpg" class="d-block w-60" alt="...">
+                    <!-- Tarjeta 2 -->
+                    <div class="col mb-4 justify-content-center align-content-center">
+                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                            <h3 class="text-center bc-black ">Voleibol</h3>
+                        </div>
+                        <br>
+                        <div class="card-flip">
+                            <div class="front card">
+                                <img src="../../resources/img/voleibolSanJose.jpeg" alt="Imagen de la tarjeta"
+                                    class="card-img-top">
+                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-right-fill"></i></button>
                             </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../../resources/img/futbolsanjose.jpg" class="d-block w-60" alt="...">
+                            <div
+                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                <div class="card-body">
+                                    <p>Voleibol masculino y femenino, deporte recreativo y divertido, practicamos
+                                        entrenos de voleibol en nuestras canchas
+                                    </p>
                                 </div>
+                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-left-fill"></i></button>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                            <div class="card-body">
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div class="col mb-4 justify-content-center align-content-center">
+                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                            <h3 class="text-center bc-black ">Futbol</h3>
+                        </div>
+                        <br>
+                        <div class="card-flip">
+                            <div class="front card">
+                                <img src="../../resources/img/futbolsanjose.jpg" alt="Imagen de la tarjeta"
+                                    class="card-img-top">
+                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-right-fill"></i></button>
+                            </div>
+                            <div
+                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                <div class="card-body">
+                                    <p>Únete a nuestro equipo de fútbol y experimenta la emoción del deporte en un
+                                        ambiente
+                                        amigable y motivador. Mejorando habilidades y trabajo en equipo
+                                    </p>
+                                </div>
+                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-left-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 justify-content-center align-content-center">
+                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                            <h3 class="text-center bc-black ">Ingles</h3>
+                        </div>
+                        <br>
+                        <div class="card-flip">
+                            <div class="front card">
+                                <img src="../../resources/img/inglesSanJose.jpg" alt="Imagen de la tarjeta"
+                                    class="card-img-top">
+                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-right-fill"></i></button>
+                            </div>
+                            <div
+                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                <div class="card-body">
+                                    <p>Sumérgete en el fascinante mundo del inglés y potencia tus habilidades
+                                        comunicativas.
+                                        A través de juegos interactivos, debates apasionantes y proyectos creativos.
+                                    </p>
+                                </div>
+                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-left-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 justify-content-center align-content-center">
+                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                            <h3 class="text-center bc-black ">Banda de Musica</h3>
+                        </div>
+                        <br>
+                        <div class="card-flip">
+                            <div class="front card">
+                                <img src="../../resources/img/futbolsanjose.jpg" alt="Imagen de la tarjeta"
+                                    class="card-img-top">
+                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-right-fill"></i></button>
+                            </div>
+                            <div
+                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                <div class="card-body">
+                                    <p>Si la música es tu pasión, ¡la Banda Musical es el lugar para ti! Aprende a
+                                        tocar un instrumento, canta con otros entusiastas y participa en presentaciones
+                                        que te permitirán brillar.
+                                    </p>
+                                </div>
+                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-left-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 justify-content-center align-content-center">
+                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                            <h3 class="text-center bc-black ">Eventos</h3>
+                        </div>
+                        <br>
+                        <div class="card-flip">
+                            <div class="front card">
+                                <img src="../../resources/img/eventosSanjose.jpg" alt="Imagen de la tarjeta"
+                                    class="card-img-top">
+                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-right-fill"></i></button>
+                            </div>
+                            <div
+                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                <div class="card-body">
+                                    <p>¡Celebra con nosotros momentos inolvidables! Desde el colorido Día de la
+                                        Independencia,
+                                        con desfiles y presentaciones, hasta días recreativos llenos de juegos y
+                                        diversión
+                                        al
+                                        aire libre.
+                                    </p>
+                                </div>
+                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                        class="bi bi-caret-left-fill"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <hr>
 
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="card" style="width: 24rem; height: 25rem;">
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../../resources/img/futbolsanjose.jpg" class="d-block w-60" alt="...">
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../../resources/img/futbolsanjose.jpg" class="d-block w-60" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                            <div class="card-body">
-                            </div>
+            <div class="section testimonials">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-7">
+                      <div class="owl-carousel owl-testimonials">
+                        <div class="item">
+                          <p>El Colegio Salesiano San José se fundó el 1 de marzo de 1903 en la ciudad de santa Ana, esto se consagró gracias a la donación de Rosa del 
+                            Carmen Martínez, quien acompañada de Fray Felipe de Jesús Moraga fueron en busca de los salesianos en el colegio Santa Cecilia en donde inviaron 
+                            al Padre José Misieri a conocer un lugar el cual estaría destinado a la construcción de una escuela católica. </p>
+                      
                         </div>
-                    </div>
-                </div>
-                <div class="card" style="width: 24rem; height: 25rem;">
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../../resources/img/futbolsanjose.jpg" class="d-block w-60" alt="...">
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../../resources/img/futbolsanjose.jpg" class="d-block w-60" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                            <div class="card-body">
-                            </div>
+                        <div class="item">
+                          <p>En el año de 1905 se implementarían los talleres de carpintería y sastrería esto se llevaría a cabo con la intención de encaminarse a una escuela de artes y oficios, 
+                            En el 2001 el colegio emigró a las afueras de la ciudad, esto debido al incremento de estudiantes y las antiguas instalaciones no daban abasto para los alumnos. 
+                            llegado el año de 1917 se obtuvo la secundaria con las ramas de comercio y hacienda.</p>
+                          
                         </div>
+                        <div class="item">
+                          <p> 
+                            Actualmente el Colegio Salesiano San José está desarrollando nuevos proyectos educativos, además se ha transformado mediante un proceso de digitalización de la educación, 
+                            utilizando recursos interactivos, modernizando programas escolares con la ayuda de plataformas en línea a la vanguardia que facilitan la educación y el conocimiento de los estudiantes.</p>
+                        </div>
+                      </div>
                     </div>
+                    <div class="col-lg-5 align-self-center">
+                      <div class="section-heading">
+                        <h2>Historia</h2>
+                        <h6>Conoce más acerca de nosotros</h6>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
+              </div>
+              </div>
 
-
-        <!------------------------------------
-              Apartado de marcas más vendidas
+            <!------------------------------------
+            Mapa
             ------------------------------------->
-        <div class="conteiner col row">
-
-            <div class="row-6 col-6">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15486.509574326212!2d-89.5492722!3d13.9807705!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e620848db4cb%3A0x57f90b2d907fd094!2sColegio%20Salesiano%20San%20Jos%C3%A9!5e0!3m2!1ses-419!2ssv!4v1721352162665!5m2!1ses-419!2ssv"
-                    width="600" height="450" style="border:4;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <div class="direccioncuadro row-5 col">
-                <br>
-                <br><br>
-                <br>
-                <img src="../../resources/img/direccion.png" class="rounded mx-auto d-block" alt="...">
-                <p class="textodireccion text-center">3 Av No 1403 Bo San Miguelito Pje Rua
-                    Santa Ana - Santa Ana</p>
-                <div class="conteiner col row">
-                    <div class="col-5 row-5">
-                        <img src="../../resources/img/telefono.png" class="rounded mx-auto d-block" alt="...">
-                        <p class="textodireccion text-center">2486 0801</p>
+            <div class="text-center servicioIndex justify-content-center my-5 py-5">
+                <p class="fs-1 fw-medium font-weight-bold text-dark">Ubicación</p>
+                <p class="fst-italic mx-4">Si deseas buscarnos, ubícanos en nuestro mapa</p>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div style="position: relative; width: 100%; overflow: hidden; padding-top: 75%;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.692216734231!2d-89.55858548845764!3d13.976916886382266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e620848db4cb%3A0x57f90b2d907fd094!2sColegio%20Salesiano%20San%20José!5e0!3m2!1ses-419!2ssv!4v1728449025868!5m2!1ses-419!2ssv"
+                                style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
-                    <div class="col-lg-6 row-5">
-                        <img src="../../resources/img/correo.png" class="rounded mx-auto d-block" alt="...">
-                        <p class="textodireccion text-center">mercadeo.cfp@salesianosanjose.edu.sv</p>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold">Información del Colegio</h3>
+                        <p class="fs-5">Dirección: Calle Ejemplo, Ciudad, País</p>
+                        <p class="fs-5">Teléfono: (123) 456-7890</p>
+                        <p class="fs-5">Email: info@colegiosalesiano.com</p>
+                        <p class="fs-5">Descripción: El Colegio Salesiano San José ofrece una educación integral enfocada en valores, conocimientos y habilidades para formar ciudadanos responsables y comprometidos.</p>
                     </div>
                 </div>
             </div>
+            
 
-        </div>
+
 
     </main>
-    <footer class="test ">
+    <!------------------------------------
+            FOOTER pie de pagina
+            ------------------------------------->
 
+    <footer style="background-color: #eee6d3;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                        style="width: 150px; height: 150px;">
+                        <img src="../../resources/img/logoc.png" loading="lazy" />
+                    </div>
+                    <p>
+                        Colegio Salesiano San José de Santa Ana tiene más de cien años de educar a la juventud para
+                        formar Buenos Cristianos y Honrados Ciudadanos
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="container d-flex flex-column align-items-center py-5">
+                        <!-- Botón de Facebook -->
+                        <a href="https://www.facebook.com/CSSJSA/" target="_blank"
+                            class="btn btn-primary btn-lg btn-floating mb-3" style="background-color: #117d37;">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <!-- Botón de Correo -->
+                        <a href="mailto:recepcion@salesianosanjose.edu.sv"
+                            class="btn btn-primary btn-lg btn-floating mb-3" style="background-color: #117d37;">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                        <!-- Botón de Instagram -->
+                        <a href="https://www.instagram.com/cssj_sv/?hl=es" target="_blank"
+                            class="btn btn-primary btn-lg btn-floating mb-3" style="background-color: #117d37;">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 d-flex flex-column align-items-center">
+                    <a href="https://maps.app.goo.gl/xDEtr2VG8gvo1L197" target="_blank"
+                        class="btn btn-primary btn-lg btn-floating mb-3" style="background-color: #117d37;">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </a>
+                    <h5 class="mb-3 text-dark">Ubicanos</h5>
+                    Black Hodoris Taekwondo, final calle 17 av 5 de marzo contiguo a colegio San Jose, Santa Ana
+                </div>
+            </div>
+        </div>
     </footer>
+
+
+    <!-- Enlazar Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- Enlazar Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- Enlazar Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- Enlazar Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- IMPORTACIÓN DE ARCHIVOS JAVASCRIPT -->
     <!--Enlace para elementos del boostrap-->
@@ -314,6 +610,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../controllers/utils/public.js"></script>
+    <script src="../../controllers/utils/custom.js"></script>
+
 
 </body>
 
