@@ -10,8 +10,9 @@
 body {
     margin: 0;
     padding: 0;
+    width: auto;
+    
 }
-
 
 .producto_index {
     height: 30px;
@@ -92,6 +93,7 @@ footer {
     height: calc(108vh - 56px);
     /* Ajusta la altura para que sea responsive, restando la altura del navbar */
     display: flex;
+    width: auto;
     flex-direction: column;
     /* Apilar los elementos verticalmente */
     align-items: flex-start;
