@@ -14,43 +14,42 @@
     <link rel="stylesheet" href="../../resources/css/templatemo-scholar.css">
     <link rel="stylesheet" href="../../resources/css/owl.css">
 
-    
+
 
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="../../views/public/index.html">
         <div class="row row-cols-1 row-cols-md-3 g-5">
-        <img src="../../resources/img/instituttosanjose.png" class="col" alt="Logo">
-    </div>
+            <img src="../../resources/img/instituttosanjose.png" class="col" alt="Logo">
+        </div>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto"> <!-- Cambiado ml-auto a ms-auto para alineación -->
             <li class="nav-item">
                 <a class="nav-link scroll-to-section" href="../../views/public/admision.html">Admisión 2024</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link scroll-to-section" href="../../views/public/ofertaBachillerato.html">Ofertas</a>
+                <a class="nav-link scroll-to-section" href="../../views/public/ofertaBachillerato.html">Tecnico</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link scroll-to-section" href="../../views/public/contactos.html">Contactos</a>
-            </li>
-            <li class="nav-item dropdown scroll-to-section">
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Otros
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item scroll-to-section" href="#">Pilet</a>
-                    <a class="dropdown-item scroll-to-section" href="#">Extracurricular</a>
+                    <a class="dropdown-item scroll-to-section" href="#ofertas">Ofertas</a>
+                    <a class="dropdown-item scroll-to-section" href="#valores">Valores</a>
+                    <a class="dropdown-item scroll-to-section" href="#events">Extracurriculares</a>
                 </div>
             </li>
         </ul>
     </div>
 </nav>
+
 
 <body class="conteiner-fluid Fondo">
     <main>
@@ -58,444 +57,523 @@
         <div class="ImgHeader">
         </div>
         <!--Cuerpo principal de la pagina-->
-       
+
         <br>
 
         <!------------------------------------
             Apartado ofertas academicas
             ------------------------------------->
+        <div class="section ofertas" id="ofertas">
+            <div class="text-center servicioIndex justify-content-center my-5 py-5">
+                <p class="fs-1 fw-medium font-weight-bold text-dark">Ofertas Academicas</p>
+                <p class="fst-italic mx-4">Ofertas academicas que tenemos en colegio San Jose para los alumnos de
+                    diferentes
+                    niveles, cada una cada con el nivel académico es una
+                    puerta abierta al conocimiento y al crecimiento personal.
+                </p>
 
-        <div class="text-center servicioIndex justify-content-center my-5 py-5">
-            <p class="fs-1 fw-medium font-weight-bold text-dark">Ofertas Academicas</p>
-            <p class="fst-italic mx-4">Ofertas academicas que tenemos en colegio San Jose para los alumnos de diferentes
-                niveles, cada una cada con el nivel académico es una
-                puerta abierta al conocimiento y al crecimiento personal.
-            </p>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
-                <div class="col">
-                    <div class="card" onclick="window.location.href='ofertaParvularia.html'">
-                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
-                        <div class="cardPortfolio">
-                            <p class="fs-5 fw-bold mt-2">parvularia</p>
-                            <p class="fst-italic text-secondary">Etapa Inicial para Niños.</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+                    <div class="col">
+                        <div class="card" onclick="window.location.href='ofertaParvularia.html'">
+                            <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                            <div class="cardPortfolio">
+                                <p class="fs-5 fw-bold mt-2">parvularia</p>
+                                <p class="fst-italic text-secondary">Etapa Inicial para Niños.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" onclick="window.location.href='ofertaPrimerCiclo.html'">
-                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
-                        <div class="cardPortfolio">
-                            <p class="fs-5 fw-bold mt-2">Primer Ciclo</p>
-                            <p class="fst-italic text-secondary">Fundamentos Educativos Iniciales.</p>
+                    <div class="col">
+                        <div class="card" onclick="window.location.href='ofertaPrimerCiclo.html'">
+                            <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                            <div class="cardPortfolio">
+                                <p class="fs-5 fw-bold mt-2">Primer Ciclo</p>
+                                <p class="fst-italic text-secondary">Fundamentos Educativos Iniciales.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" onclick="window.location.href='ofertaSegundoCiclo.html'">
-                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
-                        <div class="cardPortfolio">
-                            <p class="fs-5 fw-bold mt-2">Segundo Ciclo</p>
-                            <p class="fst-italic text-secondary">Preparación para Niveles Avanzados</p>
+                    <div class="col">
+                        <div class="card" onclick="window.location.href='ofertasSegundoCiclo.html'">
+                            <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                            <div class="cardPortfolio">
+                                <p class="fs-5 fw-bold mt-2">Segundo Ciclo</p>
+                                <p class="fst-italic text-secondary">Preparación para Niveles Avanzados</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" onclick="window.location.href='ofertaTerceroCiclo.html'">
-                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
-                        <div class="cardPortfolio">
-                            <p class="fs-5 fw-bold mt-2">Tercer Ciclo</p>
-                            <p class="fst-italic text-secondary">Educación Avanzada y Especializada</p>
+                    <div class="col">
+                        <div class="card" onclick="window.location.href='ofertaTerceroCiclo.html'">
+                            <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                            <div class="cardPortfolio">
+                                <p class="fs-5 fw-bold mt-2">Tercer Ciclo</p>
+                                <p class="fst-italic text-secondary">Educación Avanzada y Especializada</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" onclick="window.location.href='ofertasgeneral.html'">
-                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
-                        <div class="cardPortfolio">
-                            <p class="fs-5 fw-bold mt-2">Bachillerato general</p>
-                            <p class="fst-italic text-secondary">Educación Integral</p>
+                    <div class="col">
+                        <div class="card" onclick="window.location.href='ofertasgeneral.html'">
+                            <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                            <div class="cardPortfolio">
+                                <p class="fs-5 fw-bold mt-2">Bachillerato general</p>
+                                <p class="fst-italic text-secondary">Educación Integral</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" onclick="window.location.href='ofertaBachillerato.html'">
-                        <img src="../../resources/img/academica.png" class="transparente card-img-top">
-                        <div class="cardPortfolio">
-                            <p class="fs-5 fw-bold mt-2">Bachilleratos Tecnico</p>
-                            <p class="fst-italic text-secondary">Enfoque Práctico y Especializado</p>
+                    <div class="col">
+                        <div class="card" onclick="window.location.href='ofertaBachillerato.html'">
+                            <img src="../../resources/img/academica.png" class="transparente card-img-top">
+                            <div class="cardPortfolio">
+                                <p class="fs-5 fw-bold mt-2">Bachilleratos Tecnico</p>
+                                <p class="fst-italic text-secondary">Enfoque Práctico y Especializado</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-         <!------------------------------------
+        </section>
+        <div class="section valores" id="valores">
+            <!------------------------------------
             Apartado pailet
             ------------------------------------->
-        <div class="section about-us section services"  id="services">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 offset-lg-1">
-                  <div class="accordion" id="accordionExample">
-                    <!-- Pregunta 1 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          FIDELIDAD A DON BOSCO
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          Asunir el carisma salesiano a través de la viviencia de la Espiritualidad Salesiana y testimoniar los valores del "Sistema 
-                          Preventivo" de Don Bosco. Privilegiando la actitud  de simpatía, voluntad de encuentro y presencia entre los jóvenes.
+            <div class="section about-us section services" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-1">
+                            <div class="accordion" id="accordionExample">
+                                <!-- Pregunta 1 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            FIDELIDAD A DON BOSCO
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Asunir el carisma salesiano a través de la viviencia de la Espiritualidad
+                                            Salesiana y testimoniar los valores del "Sistema
+                                            Preventivo" de Don Bosco. Privilegiando la actitud de simpatía, voluntad de
+                                            encuentro y presencia entre los jóvenes.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pregunta 2 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            INTEGRIDAD
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Actuar con transparencia y honestidad en todas las dimensiones de nuestra
+                                            vida.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pregunta 3 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            COMUNICACIÓN
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Interactuar asertivamente con los demás desde el respeto de su ser,
+                                            reciprocidad de información y capacidad de escucha.
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pregunta 4 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            TRABAJO EN EQUIPO
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Colaborar entre todos a fin de alcanzar un objetivo común, en
+                                            nuestro caso, realizado en espíritu de familia (SDB-Laicos), reconociendo la
+                                            riqueza y las
+                                            cualidades del otro.
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pregunta 5 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            RESPONSABILIDAD
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Asumir el quehacer personal y cotidiano de acuerdo al ideal de
+                                            santidad de Don Bosco: "Al Señor le agrada que le sirvan con gusto, porque
+                                            haciendolo con alegría y de corazón, se ama más a Dios". (MB XII 610)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pregunta 6 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            SOLIDARIDAD
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Manifestar la disposición de estar a la busqueda de soluciones ante las
+                                            necesidades y problemas de los demás
+                                            Respuesta a la Pregunta 6.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pregunta 7 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                            aria-expanded="false" aria-controls="collapseSeven">
+                                            LIDERAZGO
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Asumir el liderazgo participativo que implica animar positiva y
+                                            efectivamente
+                                            la ejecución del trabajo y la consecución de los objetivos.
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pregunta 8 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEight">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                            aria-expanded="false" aria-controls="collapseEight">
+                                            CREATIVIDAD
+                                        </button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse"
+                                        aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Actuar con libertad de pensamiento y acción para el encuentro de nuevas
+                                            soluciones, en lo cotidiano, en la novedad y en la tradición.
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pregunta 9 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingNine">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                            aria-expanded="false" aria-controls="collapseNine">
+                                            FE
+                                        </button>
+                                    </h2>
+                                    <div id="collapseNine" class="accordion-collapse collapse"
+                                        aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Reconocer la presencia operante de Dios en nuestro quehacer y experimentarla
+                                            como vida y amor, que motiva nuestro existir y todas nuestras actividades
+                                            educativo pastorales
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-          
-                    <!-- Pregunta 2 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          INTEGRIDAD
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          Actuar con transparencia y honestidad en todas las dimensiones de nuestra vida.
-                        </div>
-                      </div>
-                    </div>
-          
-                    <!-- Pregunta 3 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                         COMUNICACIÓN
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          Interactuar asertivamente con los demás desde el respeto de su ser,
-                          reciprocidad de información y capacidad de escucha.
-        
-                        </div>
-                      </div>
-                    </div>
-          
-                    <!-- Pregunta 4 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                         TRABAJO EN EQUIPO
-                        </button>
-                      </h2>
-                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          Colaborar entre todos a fin de alcanzar un objetivo común, en
-                          nuestro caso, realizado en espíritu de familia (SDB-Laicos), reconociendo la riqueza y las
-                          cualidades del otro.
-                          
-                        </div>
-                      </div>
-                    </div>
-          
-                    <!-- Pregunta 5 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                          RESPONSABILIDAD
-                        </button>
-                      </h2>
-                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          Asumir el quehacer personal y cotidiano de acuerdo al ideal de
-                          santidad de Don Bosco: "Al Señor le agrada que le sirvan con gusto, porque haciendolo con alegría y de corazón, se ama más a Dios". (MB XII 610)
-                        </div>
-                      </div>
-                    </div>
-          
-                    <!-- Pregunta 6 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                          SOLIDARIDAD
-                        </button>
-                      </h2>
-                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          Manifestar la disposición de estar a la busqueda de soluciones ante las
-                          necesidades y problemas de los demás
-                           Respuesta a la Pregunta 6.
-                        </div>
-                      </div>
-                    </div>
-          
-                    <!-- Pregunta 7 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingSeven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                          LIDERAZGO
-                        </button>
-                      </h2>
-                      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          Asumir el liderazgo participativo que implica animar positiva y efectivamente
-                          la ejecución del trabajo y la consecución de los objetivos.
-        
-                        </div>
-                      </div>
-                    </div>
-          
-                    <!-- Pregunta 8 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingEight">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                          CREATIVIDAD
-                        </button>
-                      </h2>
-                      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          Actuar con libertad de pensamiento y acción para el encuentro de nuevas
-                          soluciones, en lo cotidiano, en la novedad y en la tradición.
-        
-                        </div>
-                      </div>
-                    </div>
-          
-                    <!-- Pregunta 9 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingNine">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                          FE
-                        </button>
-                      </h2>
-                      <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          Reconocer la presencia operante de Dios en nuestro quehacer y experimentarla como vida y amor, que motiva nuestro existir y todas nuestras actividades educativo pastorales
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-5 align-self-center">
-                  <div class="section-heading">
-                    <h2 style="color:#fbba3f">VALORES</h2>
-                     <!-- Pregunta 9
+                        <div class="col-lg-5 align-self-center">
+                            <div class="section-heading">
+                                <h2 style="color:#fbba3f">VALORES</h2>
+                                <!-- Pregunta 9
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
                     <div class="main-button">
                       <a href="#">Discover More</a>
                     </div>
                      -->
-                  </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          
+        </div>
+        </section>
         <!------------------------------------
             Apartado extracurriculares
             ------------------------------------->
 
 
+        <div class="section events" id="events">
+            <div class="text-center servicioIndex justify-content-center my-5 py-5">
+                <p class="fs-1 fw-medium font-weight-bold text-dark">Extracurriculares</p>
+                <p class="fst-italic mx-4">Ofrecemos mas que solo niveles academicos, compleatmos tambien en nuestra
+                    institución,
+                    las actividades extracurriculares son el complemento perfecto para una educación integral.
+                </p>
 
-        <div class="text-center servicioIndex justify-content-center my-5 py-5">
-            <p class="fs-1 fw-medium font-weight-bold text-dark">Extracurriculares</p>
-            <p class="fst-italic mx-4">Ofrecemos mas que solo niveles academicos, compleatmos tambien en nuestra
-                institución,
-                las actividades extracurriculares son el complemento perfecto para una educación integral.
-            </p>
-
-            <br>
-            <div class="container mt-3"> <!-- Ajuste de margen -->
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <!-- Tarjeta 1 -->
-                    <div class="col mb-4 justify-content-center align-content-center">
-                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
-                            <h3 class="text-center bc-black ">Baloncesto</h3>
-                        </div>
-                        <br>
-                        <div class="card-flip">
-                            <div class="front card">
-                                <img src="../../resources/img/baloncestoSanJose.png" alt="Imagen de la tarjeta"
-                                    class="card-img-top">
-                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-right-fill"></i></button>
+                <br>
+                <div class="container mt-3"> <!-- Ajuste de margen -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Tarjeta 1 -->
+                        <div class="col mb-4 justify-content-center align-content-center">
+                            <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                                <h3 class="text-center bc-black ">Baloncesto</h3>
                             </div>
-                            <div
-                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
-                                <div class="card-body">
-                                    <p>Desata tu pasión por el baloncesto en nuestras prácticas dinámicas y
-                                        emocionantes.
-                                        Desde perfeccionar tus tiros hasta desarrollar tu agilidad y resistencia.
-                                    </p>
+                            <br>
+                            <div class="card-flip">
+                                <div class="front card">
+                                    <img src="../../resources/img/baloncestoSanJose.png" alt="Imagen de la tarjeta"
+                                        class="card-img-top">
+                                    <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-right-fill"></i></button>
                                 </div>
-                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-left-fill"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Tarjeta 2 -->
-                    <div class="col mb-4 justify-content-center align-content-center">
-                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
-                            <h3 class="text-center bc-black ">Voleibol</h3>
-                        </div>
-                        <br>
-                        <div class="card-flip">
-                            <div class="front card">
-                                <img src="../../resources/img/voleibolSanJose.jpeg" alt="Imagen de la tarjeta"
-                                    class="card-img-top">
-                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-right-fill"></i></button>
-                            </div>
-                            <div
-                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
-                                <div class="card-body">
-                                    <p>Voleibol masculino y femenino, deporte recreativo y divertido, practicamos
-                                        entrenos de voleibol en nuestras canchas
-                                    </p>
+                                <div
+                                    class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                    <div class="card-body">
+                                        <p>Desata tu pasión por el baloncesto en nuestras prácticas dinámicas y
+                                            emocionantes.
+                                            Desde perfeccionar tus tiros hasta desarrollar tu agilidad y resistencia.
+                                        </p>
+                                    </div>
+                                    <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-left-fill"></i></button>
                                 </div>
-                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-left-fill"></i></button>
                             </div>
                         </div>
-                    </div>
-                    <!-- Tarjeta 3 -->
-                    <div class="col mb-4 justify-content-center align-content-center">
-                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
-                            <h3 class="text-center bc-black ">Futbol</h3>
-                        </div>
-                        <br>
-                        <div class="card-flip">
-                            <div class="front card">
-                                <img src="../../resources/img/futbolsanjose.jpg" alt="Imagen de la tarjeta"
-                                    class="card-img-top">
-                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-right-fill"></i></button>
+                        <!-- Tarjeta 2 -->
+                        <div class="col mb-4 justify-content-center align-content-center">
+                            <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                                <h3 class="text-center bc-black ">Voleibol</h3>
                             </div>
-                            <div
-                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
-                                <div class="card-body">
-                                    <p>Únete a nuestro equipo de fútbol y experimenta la emoción del deporte en un
-                                        ambiente
-                                        amigable y motivador. Mejorando habilidades y trabajo en equipo
-                                    </p>
+                            <br>
+                            <div class="card-flip">
+                                <div class="front card">
+                                    <img src="../../resources/img/voleibolSanJose.jpeg" alt="Imagen de la tarjeta"
+                                        class="card-img-top">
+                                    <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-right-fill"></i></button>
                                 </div>
-                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-left-fill"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4 justify-content-center align-content-center">
-                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
-                            <h3 class="text-center bc-black ">Ingles</h3>
-                        </div>
-                        <br>
-                        <div class="card-flip">
-                            <div class="front card">
-                                <img src="../../resources/img/inglesSanJose.jpg" alt="Imagen de la tarjeta"
-                                    class="card-img-top">
-                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-right-fill"></i></button>
-                            </div>
-                            <div
-                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
-                                <div class="card-body">
-                                    <p>Sumérgete en el fascinante mundo del inglés y potencia tus habilidades
-                                        comunicativas.
-                                        A través de juegos interactivos, debates apasionantes y proyectos creativos.
-                                    </p>
+                                <div
+                                    class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                    <div class="card-body">
+                                        <p>Voleibol masculino y femenino, deporte recreativo y divertido, practicamos
+                                            entrenos de voleibol en nuestras canchas
+                                        </p>
+                                    </div>
+                                    <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-left-fill"></i></button>
                                 </div>
-                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-left-fill"></i></button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col mb-4 justify-content-center align-content-center">
-                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
-                            <h3 class="text-center bc-black ">Banda de Musica</h3>
-                        </div>
-                        <br>
-                        <div class="card-flip">
-                            <div class="front card">
-                                <img src="../../resources/img/futbolsanjose.jpg" alt="Imagen de la tarjeta"
-                                    class="card-img-top">
-                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-right-fill"></i></button>
+                        <!-- Tarjeta 3 -->
+                        <div class="col mb-4 justify-content-center align-content-center">
+                            <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                                <h3 class="text-center bc-black ">Futbol</h3>
                             </div>
-                            <div
-                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
-                                <div class="card-body">
-                                    <p>Si la música es tu pasión, ¡la Banda Musical es el lugar para ti! Aprende a
-                                        tocar un instrumento, canta con otros entusiastas y participa en presentaciones
-                                        que te permitirán brillar.
-                                    </p>
+                            <br>
+                            <div class="card-flip">
+                                <div class="front card">
+                                    <img src="../../resources/img/futbolsanjose.jpg" alt="Imagen de la tarjeta"
+                                        class="card-img-top">
+                                    <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-right-fill"></i></button>
                                 </div>
-                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-left-fill"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4 justify-content-center align-content-center">
-                        <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
-                            <h3 class="text-center bc-black ">Eventos</h3>
-                        </div>
-                        <br>
-                        <div class="card-flip">
-                            <div class="front card">
-                                <img src="../../resources/img/eventosSanjose.jpg" alt="Imagen de la tarjeta"
-                                    class="card-img-top">
-                                <button class="arrow arrow-right" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-right-fill"></i></button>
-                            </div>
-                            <div
-                                class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
-                                <div class="card-body">
-                                    <p>¡Celebra con nosotros momentos inolvidables! Desde el colorido Día de la
-                                        Independencia,
-                                        con desfiles y presentaciones, hasta días recreativos llenos de juegos y
-                                        diversión
-                                        al
-                                        aire libre.
-                                    </p>
+                                <div
+                                    class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                    <div class="card-body">
+                                        <p>Únete a nuestro equipo de fútbol y experimenta la emoción del deporte en un
+                                            ambiente
+                                            amigable y motivador. Mejorando habilidades y trabajo en equipo
+                                        </p>
+                                    </div>
+                                    <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-left-fill"></i></button>
                                 </div>
-                                <button class="arrow arrow-left" onclick="toggleCard(this)"><i
-                                        class="bi bi-caret-left-fill"></i></button>
+                            </div>
+                        </div>
+                        <div class="col mb-4 justify-content-center align-content-center">
+                            <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                                <h3 class="text-center bc-black ">Ingles</h3>
+                            </div>
+                            <br>
+                            <div class="card-flip">
+                                <div class="front card">
+                                    <img src="../../resources/img/inglesSanJose.jpg" alt="Imagen de la tarjeta"
+                                        class="card-img-top">
+                                    <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                                <div
+                                    class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                    <div class="card-body">
+                                        <p>Sumérgete en el fascinante mundo del inglés y potencia tus habilidades
+                                            comunicativas.
+                                            A través de juegos interactivos, debates apasionantes y proyectos creativos.
+                                        </p>
+                                    </div>
+                                    <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-left-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 justify-content-center align-content-center">
+                            <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                                <h3 class="text-center bc-black ">Banda de Musica</h3>
+                            </div>
+                            <br>
+                            <div class="card-flip">
+                                <div class="front card">
+                                    <img src="../../resources/img/futbolsanjose.jpg" alt="Imagen de la tarjeta"
+                                        class="card-img-top">
+                                    <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                                <div
+                                    class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                    <div class="card-body">
+                                        <p>Si la música es tu pasión, ¡la Banda Musical es el lugar para ti! Aprende a
+                                            tocar un instrumento, canta con otros entusiastas y participa en
+                                            presentaciones
+                                            que te permitirán brillar.
+                                        </p>
+                                    </div>
+                                    <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-left-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 justify-content-center align-content-center">
+                            <div class="Extracurricular grid gap-2 mx-auto justify-content-center align-content-center">
+                                <h3 class="text-center bc-black ">Eventos</h3>
+                            </div>
+                            <br>
+                            <div class="card-flip">
+                                <div class="front card">
+                                    <img src="../../resources/img/eventosSanjose.jpg" alt="Imagen de la tarjeta"
+                                        class="card-img-top">
+                                    <button class="arrow arrow-right" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                                <div
+                                    class="back card bg-success p-5 text-white d-flex align-items-center justify-content-center">
+                                    <div class="card-body">
+                                        <p>¡Celebra con nosotros momentos inolvidables! Desde el colorido Día de la
+                                            Independencia,
+                                            con desfiles y presentaciones, hasta días recreativos llenos de juegos y
+                                            diversión
+                                            al
+                                            aire libre.
+                                        </p>
+                                    </div>
+                                    <button class="arrow arrow-left" onclick="toggleCard(this)"><i
+                                            class="bi bi-caret-left-fill"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <hr>
+                </section>
             </div>
-            <hr>
 
-
+            <div class="contact-us section" id="contact">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6  align-self-center">
+                      <div class="section-heading text-center">
+                        <h6>Contactenos</h6>
+                        <h3>No dudes en contactarnos en cualquier momento</h3>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="contact-us-content">
+                        <form id="contact-form" action="" method="post">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="orange-button">ENVIAR MENSAJE</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <!------------------------------------
             Mapa
             ------------------------------------->
             <div class="text-center servicioIndex justify-content-center my-5 py-5">
                 <p class="fs-1 fw-medium font-weight-bold text-dark">Ubicación</p>
                 <p class="fst-italic mx-4">Si deseas buscarnos, ubícanos en nuestro mapa</p>
-                
+
                 <div class="row">
                     <div class="col-md-6">
                         <div style="position: relative; width: 100%; overflow: hidden; padding-top: 75%;">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.692216734231!2d-89.55858548845764!3d13.976916886382266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e620848db4cb%3A0x57f90b2d907fd094!2sColegio%20Salesiano%20San%20José!5e0!3m2!1ses-419!2ssv!4v1728449025868!5m2!1ses-419!2ssv"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.692216734231!2d-89.55858548845764!3d13.97
+                                6916886382266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e620848db4cb%3A0x57f90b2d907fd094!2sColegio%20Sales
+                                iano%20San%20José!5e0!3m2!1ses-419!2ssv!4v1728449025868!5m2!1ses-419!2ssv"
                                 style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
                                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h3 class="fw-bold">Información del Colegio</h3>
-                        <p class="fs-5">Dirección: Calle Ejemplo, Ciudad, País</p>
-                        <p class="fs-5">Teléfono: (123) 456-7890</p>
-                        <p class="fs-5">Email: info@colegiosalesiano.com</p>
-                        <p class="fs-5">Descripción: El Colegio Salesiano San José ofrece una educación integral enfocada en valores, conocimientos y habilidades para formar ciudadanos responsables y comprometidos.</p>
+                        <img src="../../resources/img/publicidad.gif" alt="Imagen" class="img-fluid">
                     </div>
                 </div>
             </div>
-            
+
 
 
 
@@ -579,13 +657,13 @@
     <script src="../../controllers/utils/public.js"></script>
     <script src="../../controllers/utils/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
-<script>
-       /*Funcion para las tarjetas de extracurriculares*/
-       function toggleCard(button) {
-        const cardFlip = button.closest('.card-flip');
-        cardFlip.classList.toggle('flipped');
-    }
-</script>
+    <script>
+        /*Funcion para las tarjetas de extracurriculares*/
+        function toggleCard(button) {
+            const cardFlip = button.closest('.card-flip');
+            cardFlip.classList.toggle('flipped');
+        }
+    </script>
 
 
 

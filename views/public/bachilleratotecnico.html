@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
+    <title>Ofertas de Tecnicos Especializados</title>
     <link rel="icon" href="../../resources/img/iconos/iconoPagina.ico">
     <link rel="stylesheet" href="../../resources/css/css_boostrap.css">
     <link rel="stylesheet" href="../../resources/css/csspublic.css">
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="col text-end">
-                <button type="button" class="btn btn-success" onclick="window.location.href='ofertaParvularia.html'">
+                <button type="button" class="btn btn-success" onclick="window.location.href='ofertaBachillerato.html'">
                     <img src="../../resources/img/regresoAdmision.png" alt="Regreso" style="width: 60px; height: 60px;">
                 </button>
             </div>
@@ -48,45 +48,250 @@
     <main class="container my-5">
         <div class="row">
             <div class="col-12 text-center p-5">
-                <h2>Preparatoria</h2>
+                <h2>Bachillerato Tecnico Especializado</h2>
                 <hr class="highlight">
             </div>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="tarjetaImagenDescripcion">
-                    <div class="card-body">
-                        <img src="../../resources/img/parvulariaSanJoseS.png" class="img-fluid rounded float-start"
-                            alt="..." style="max-width: 100%; height: auto;">
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="tarjetaImagenDescripcion">
+                        <div class="card-body">
+                            <img src="../../resources/img/DSSanJose.png" class="img-fluid rounded float-start" alt="..."
+                                style="max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card descripcion h-100">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <p class="p-3 text-center">
+                                Descripción: La especialidad en Desarrollo Técnico capacita a los estudiantes en la
+                                creación y gestión de proyectos tecnológicos. Los alumnos aprenderán sobre programación,
+                                bases de datos, diseño de sistemas y metodologías de desarrollo ágil. Se enfatiza la
+                                resolución de problemas y el trabajo en equipo, preparando a los estudiantes para
+                                enfrentar los desafíos del mundo laboral en el área de tecnología.
+                            </p>
+                        </div>
+                        <div class="container d-grid gap-2 col-5 mx-auto">
+                            <button type="button" class="btnEnviar mx-auto fw-bold btn btn-success"
+                                data-bs-toggle="modal" data-bs-target="#PUDSModal">
+                                Proyeccion universitaria
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card descripcion h-100">
-                    <div class="card-body d-flex align-items-center justify-content-center">
-                        <p class="p-3 text-center">
-                            Aquí se consolidan las habilidades adquiridas en los niveles anteriores. Se introducen
-                            actividades más estructuradas que preparan a los niños para la educación primaria. Se
-                            trabaja en la lectoescritura inicial y en nociones matemáticas simples. Además, se impulsa
-                            la creatividad a través de proyectos artísticos y la exploración del entorno, promoviendo el
-                            pensamiento crítico y la curiosidad.
-                        </p>
-                    </div>
-                    <div class="container d-grid gap-2 col-5 mx-auto">
-                        <button type="button" class="btnEnviar mx-auto fw-bold btn btn-success" data-bs-toggle="modal"
-                            data-bs-target="#saveModal">
-                            Requerimientos
-                        </button>
-                    </div>
 
+            <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+                <div class="col">
+                    <div class="tarjetaImagenDescripcion">
+                        <div class="card-body">
+                            <img src="../../resources/img/DGSanJose.png" class="img-fluid rounded float-start" alt="..."
+                                style="max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card descripcion h-100">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <p class="p-3 text-center">
+                                Descripción: La especialidad en Diseño Gráfico ofrece a los estudiantes una formación
+                                integral en técnicas de diseño, creatividad y comunicación visual. Los alumnos
+                                aprenderán a utilizar software especializado para la creación de gráficos digitales,
+                                diseño editorial, publicidad y branding. Además, se fomenta la capacidad crítica y
+                                analítica para desarrollar proyectos que respondan a las necesidades del mercado.
+                            </p>
+                        </div>
+                        <div class="container d-grid gap-2 col-5 mx-auto">
+                            <button type="button" class="btnEnviar mx-auto fw-bold btn btn-success"
+                                data-bs-toggle="modal" data-bs-target="#PUDGModal">
+                                Proyeccion universitaria
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+                <div class="col">
+                    <div class="tarjetaImagenDescripcion">
+                        <div class="card-body">
+                            <img src="../../resources/img/SESanJose.png" class="img-fluid rounded float-start" alt="..."
+                                style="max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card descripcion h-100">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <p class="p-3 text-center">
+                                Descripción: La especialidad en Técnico Electricista proporciona una formación práctica
+                                y teórica en el campo de la electricidad y la electrónica. Los estudiantes aprenderán
+                                sobre instalaciones eléctricas, mantenimiento de sistemas eléctricos y seguridad en el
+                                trabajo. Esta especialidad está diseñada para preparar a los alumnos para desempeñarse
+                                en diferentes sectores, como construcción, mantenimiento industrial y servicios
+                                eléctricos.
+                            </p>
+                        </div>
+                        <div class="container d-grid gap-2 col-5 mx-auto">
+                            <button type="button" class="btnEnviar mx-auto fw-bold btn btn-success"
+                                data-bs-toggle="modal" data-bs-target="#PUDTModal">
+                                Proyeccion universitaria
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-grid gap-2 col-5 mx-auto">
+            <button type="button" class="bntPU mx-auto fw-bold btn btn-success"
+                data-bs-toggle="modal" data-bs-target="#saveModal">
+                Requerimientos
+            </button>
+        </div>
+
 
     </main>
 
-    <!-- Modal agregar beneficio -->
-    <div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Proyeccion universitaria desarrollo electrico -->
+    <div class="modal fade" id="PUDTModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+
+                <!-- Formulario saveForm -->
+                <form id="PUDTModal" class="needs-validation">
+
+                    <!-- Campo oculto para asignar el id del registro al momento de modificar -->
+                    <input type="number" class="d-none" id="idRequerimientos" name="idRequerimientos">
+
+                    <!-- Body del modal -->
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="text-black p-2">Requerimientos</h2>
+                            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <hr class="my-3" style="border-top: 1px solid #000000;"> <!-- Línea divisora -->
+                        <h1 class="fs-4 fw-bold text-center mb-4" id="modalTitle"></h1>
+
+                        <!-- Content -->
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 mt-3 text-black">
+                                        <ul>
+                                            <li>Técnico universitario en Electrónica o Electricidad.</li>
+                                            <li>Ingeniería Electrónica o Eléctrica.</li>
+                                            <li>Técnico en Mantenimiento Aeronáutico.</li>
+                                            <li>Ingeniería Mecatrónica.</li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form> <!-- Cierre del formulario -->
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal Proyeccion universitaria desarrollo electrico -->
+     <div class="modal fade" id="PUDGModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+
+                <!-- Formulario saveForm -->
+                <form id="PUDGModal" class="needs-validation">
+
+                    <!-- Campo oculto para asignar el id del registro al momento de modificar -->
+                    <input type="number" class="d-none" id="idRequerimientos" name="idRequerimientos">
+
+                    <!-- Body del modal -->
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="text-black p-2">Proyeccion universitaria</h2>
+                            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <hr class="my-3" style="border-top: 1px solid #000000;"> <!-- Línea divisora -->
+                        <h1 class="fs-4 fw-bold text-center mb-4" id="modalTitle"></h1>
+
+                        <!-- Content -->
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 mt-3 text-black">
+                                            <li>Analista de sistemas.</li>
+                                            <li>Animador multimedia.</li>
+                                            <li>Técnico de aseguramiento de calidad.</li>
+                                            <li>Desarrollador de aseguramiento de calidad.</li>
+                                            <li>Desarrollador de páginas web y aplicaciones.</li>
+                                            <li>Microempresario en el área de desarrollo web.</li>
+                                            <li>Diseñador de sistemas y bases de datos.</li>
+                                            <li>Arquitecto de sistemas.</li>
+                                            <li>Instalador de redes LAN.</li>
+                                            <li>Microempresario en el área de diseño, construcción y configuración de portales web.</li>
+                                            <li>Desarrollador de aplicaciones web con lenguaje de tercera generación.</li>
+                                            <li>Gestor de la operación de los sistemas informáticos.</li>
+                                            <li>Administrador de base de datos.</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form> <!-- Cierre del formulario -->
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal Proyeccion universitaria desarrollo electrico  -->
+     <div class="modal fade" id="PUDSModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+
+                <!-- Formulario saveForm -->
+                <form id="PUDSModal" class="needs-validation">
+
+                    <!-- Campo oculto para asignar el id del registro al momento de modificar -->
+                    <input type="number" class="d-none" id="idRequerimientos" name="idRequerimientos">
+
+                    <!-- Body del modal -->
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="text-black p-2">Proyeccion universitaria</h2>
+                            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <hr class="my-3" style="border-top: 1px solid #000000;"> <!-- Línea divisora -->
+                        <h1 class="fs-4 fw-bold text-center mb-4" id="modalTitle"></h1>
+
+                        <!-- Content -->
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 mt-3 text-black">
+                                        <ul>
+                                            <li>Técnico en Diseño gráfico.</li>
+                                            <li>Licenciatura en Diseño gráfico.</li>
+                                            <li>Licenciatura en Diseño industrial.</li>
+                                            <li>Licenciatura en Diseño artesanal.</li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form> <!-- Cierre del formulario -->
+            </div>
+        </div>
+    </div>
+    
+     <!-- Modal agregar requerimientos -->
+     <div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-dark text-white">
 
@@ -94,7 +299,7 @@
                 <form id="saveForm" class="needs-validation">
 
                     <!-- Campo oculto para asignar el id del registro al momento de modificar -->
-                    <input type="number" class="d-none" id="idBeneficio" name="idBeneficio">
+                    <input type="number" class="d-none" id="idRequerimientos" name="idRequerimientos">
 
                     <!-- Body del modal -->
                     <div class="modal-body">
@@ -114,23 +319,22 @@
                                         <li class="text-black p-2">Certificado de nacimiento.</li>
                                         <li class="text-black p-2">Fotografía reciente.</li>
                                         <li class="text-black p-2">Documentos de salud (vacunas al día).</li>
-                                        <li class="text-black p-2">Edad mínima de 4 años.</li>
-                                        <li class="text-black p-2">Cumplimiento de útiles escolares solicitados.</li>
                                         <li class="text-black p-2">Entrevista con los padres o tutores.</li>
-                                        <li class="text-black p-2">Informe de evaluación de Kínder 4.</li>
                                         <li class="text-black p-2">Registro de adaptación al entorno escolar
                                             (observaciones iniciales).</li>
+                                        <li class="text-black p-2">Informe de evaluación de Noveno Grado.</li>
+                                        <li class="text-black p-2">Material escolar y textos requeridos.</li>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </form> <!-- Cierre del formulario -->
             </div>
+            </form> <!-- Cierre del formulario -->
         </div>
     </div>
-
-
+    </div>
 
     <footer style="background-color: #eee6d3;">
         <div class="container p-4">
@@ -190,6 +394,13 @@
         document.querySelector('.btnEnviar').addEventListener('click', function () {
             // Aquí puedes hacer cualquier preparación que necesites antes de mostrar el modal
             var modal = new bootstrap.Modal(document.getElementById('saveModal'));
+            modal.show();
+        });
+    </script>
+      <script>
+        document.querySelector('.bntPU').addEventListener('click', function () {
+            // Aquí puedes hacer cualquier preparación que necesites antes de mostrar el modal
+            var modal = new bootstrap.Modal(document.getElementById('PUModal'));
             modal.show();
         });
     </script>
