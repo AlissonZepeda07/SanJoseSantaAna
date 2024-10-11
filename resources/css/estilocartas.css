@@ -159,12 +159,3 @@
     -moz-box-shadow: 8px 17px 8px -3px rgba(168, 168, 168, 0.69);
 }
 
-/* Ajustes para el contenedor de las tarjetas */
-#productosMarc {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    /* Espacio entre las tarjetas */
-    justify-content: center;
-    /* Centrar las tarjetas horizontalmente */
-}

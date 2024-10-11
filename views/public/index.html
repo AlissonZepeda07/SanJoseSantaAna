@@ -51,8 +51,8 @@
 </nav>
 
 
-<body class="conteiner-fluid Fondo">
-    <main>
+<body class="conteiner Fondo">
+  
         <!--Imagen de encabezado entrada-->
         <div class="ImgHeader">
         </div>
@@ -275,6 +275,13 @@
                                         </div>
                                     </div>
                                 </div>
+                                <style>
+                                    @media (max-width: 768px) {
+                                        .valoresTt { /* Cambia este selector si es necesario */
+                                            display: none; /* Oculta la palabra "valores" */
+                                        }
+                                    }
+                                </style>
 
                                 <!-- Pregunta 8 -->
                                 <div class="accordion-item">
@@ -317,7 +324,7 @@
                         </div>
                         <div class="col-lg-5 align-self-center">
                             <div class="section-heading">
-                                <h2 style="color:#fbba3f">VALORES</h2>
+                                <h2 class="valoresTt" style="color:#fbba3f">VALORES</h2>
                                 <!-- Pregunta 9
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
                     <div class="main-button">

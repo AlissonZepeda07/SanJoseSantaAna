@@ -16,22 +16,13 @@ El Colegio San José es un centro educativo católico y salesiano localizado en 
 - Espaciado : 4.
 - Nombres de carpetas: minusculas.
 - Nombre de archivos: minusculas.
-- Comentarios: Se ha agregado comentarios acorde a las acciones que se estan realizando
 
   
 ## JavaScript
 
 - Constantes principales: Screaming Snake Case (OFERTAS_API)
-- Variables: camelCase(correoCliente)
+- Variables: camelCase(correo)
 
-## PHP ( Hypertext Preprocessor)
-
-- Nombre de carpetas : minusculas
-- nombre de archivos : Snake_case (comentarios_data)
-- Nombre de clases : PascalCase (ClienteData)
-- Variables: minusculas.
-- Nombre de funciones: camelCase (setId)
-- Nombres de metodos (case) : camelCase(createRow)
 
 ## Dependencias Utilizadas
 

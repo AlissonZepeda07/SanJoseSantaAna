@@ -845,10 +845,12 @@ About Style
   z-index: -1;
   width: 84%;
   height: 100%;
-  background-color: #f1f0fe;
+  background: linear-gradient(to bottom, #e5e6e3, rgba(240, 240, 240, 0));
   content: '';
   border-top-left-radius: 500px;
   border-bottom-left-radius: 500px;
+  width: 100%; /* O el tamaño que desees */
+  height: 100vh; /* O el tamaño que desees */
 }
 
 .accordion {
@@ -1404,10 +1406,11 @@ Contact Style
   z-index: -1;
   width: 65%;
   height: 100%;
-  background-color: #f1f0fe;
+  background: linear-gradient(to bottom, #e5e6e3, rgba(240, 240, 240, 0));
   content: '';
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
+  
 }
 
 

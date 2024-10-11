@@ -14,7 +14,7 @@ body {
     
 }
 
-.producto_index {
+.index_ser {
     height: 30px;
 }
 
@@ -24,7 +24,9 @@ main {
     min-height: 100vh;
     position: sticky;
     padding-bottom: 50px;
+    
 }
+
 
 .container {
     padding-bottom: 50px;
@@ -85,7 +87,7 @@ footer {
 }
 
 .ImgHeader {
-    background-image: url('../../resources/img/admisionJose.jpg');
+    background-image: url('../../resources/img/inicioSanjoSE.jpg');
     background-size: cover;
     /* Asegura que la imagen cubra todo el contenedor */
     background-position: center;
@@ -98,8 +100,7 @@ footer {
     /* Apilar los elementos verticalmente */
     align-items: flex-start;
     /* Alinear a la izquierda */
-    padding-left: 20px;
-    padding-top: 400px;
+
     margin: 0;
     /* Elimina el margen por defecto */
     font-family: 'Alfa Slab One';
@@ -753,7 +754,7 @@ div iframe {
 
 /*historia*/
 
-.producto_imagen {
+.buscador {
     margin-top: 10rem
 }
 
